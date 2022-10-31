@@ -1,4 +1,10 @@
-
+%columnContentHR {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 // Couleurs : 
 $color-red: #F60B0E;
 $darkest-background:#1B1B1B;
@@ -7,14 +13,38 @@ $white-background:#fefefe;
 $global-font-color:#717171 ;
 $nav-font-color: #777;
 ///
-
-.footer__general-informations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
+footer {
+    background-color: $dark-background;
+    color: $white-background;
+    background-image: url("../../../images/footer_img.jpg");
+    .footer__general-informations {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        align-items: flex-start;
+        hr {
+            border-color: $color-red;
+            width: 25px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 5%;
+            align-items: flex-start;
+        }
+        .column1_title {
+            @extend %columnContentHR;
+        }
+        .column2_title {
+            @extend %columnContentHR;
+        }
+        .column3_title {
+            @extend %columnContentHR;
+        }
+        .column4_title {
+            @extend %columnContentHR;
+        }
+    }
 }
 
 @media screen and (max-width: 412px) 

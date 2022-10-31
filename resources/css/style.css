@@ -1,12 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
-.footer__general-informations {
+footer .footer__general-informations .column1_title, footer .footer__general-informations .column2_title, footer .footer__general-informations .column3_title, footer .footer__general-informations .column4_title {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: flex-start;
+  justify-content: flex-start;
   align-items: flex-start; }
+
+footer {
+  background-color: #222222;
+  color: #fefefe;
+  background-image: url("../../../images/footer_img.jpg"); }
+  footer .footer__general-informations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start; }
+    footer .footer__general-informations hr {
+      border-color: #F60B0E;
+      width: 25px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 5%;
+      align-items: flex-start; }
 
 @media screen and (max-width: 412px) {
   .footer__general-informations {

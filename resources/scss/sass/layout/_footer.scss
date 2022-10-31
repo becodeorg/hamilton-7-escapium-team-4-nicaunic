@@ -1,7 +1,4 @@
-@use "./sass/base/reset";
-@use "./sass/base/typography";
-@use "./sass/sass-utils/_variables";
-////
+
 // Couleurs : 
 $color-red: #F60B0E;
 $darkest-background:#1B1B1B;
@@ -12,5 +9,11 @@ $nav-font-color: #777;
 ///
 
 .footer__general-informations {
-    background-color: $darkest-background;
+    background-color: $color-red;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
 }

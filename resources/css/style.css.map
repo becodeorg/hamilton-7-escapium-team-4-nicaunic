@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACQ,gGAAwF;AAIxF,sFAA8E;ACLtF,wBAAwB;AACxB,6BAA6B;AAC7B,mCAAmC;AAWnC,6BAA8B;EAC1B,gBAAgB,EARA,OAAO",
+"sources": ["../scss/sass/base/_typography.scss","../scss/sass/layout/_footer.scss"],
+"names": [],
+"file": "style.css"
+}

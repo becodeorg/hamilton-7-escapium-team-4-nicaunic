@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./resources/scss/style.scss:./resources/css/style.css"
+    "sass": "sass --watch resources/scss/style.scss:resources/css/style.css"
   },
   "homepage": "https://github.com/becodeorg/hamilton-7-escapium-team-4-nicaunic",
   "dependencies": {

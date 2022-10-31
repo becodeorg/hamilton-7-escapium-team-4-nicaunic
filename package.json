@@ -1,0 +1,12 @@
+{
+  "name": "escape-room",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./resources/scss/style.scss:./resources/css/style.css"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

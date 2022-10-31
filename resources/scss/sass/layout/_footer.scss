@@ -9,11 +9,22 @@ $nav-font-color: #777;
 ///
 
 .footer__general-informations {
-    background-color: $color-red;
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: flex-start;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 412px) 
+{ 
+    .footer__general-informations {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    }
 }

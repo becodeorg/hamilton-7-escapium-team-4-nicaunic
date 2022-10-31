@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "sass --watch ./resources/scss/style.scss:./resources/css/style.css"
   },
-  "homepage": "https://github.com/becodeorg/hamilton-7-escapium-team-4-nicaunic#index",
+  "homepage": "https://github.com/becodeorg/hamilton-7-escapium-team-4-nicaunic",
   "dependencies": {
     "readline-sync": "^1.4.10"
   }

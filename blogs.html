@@ -10,29 +10,35 @@
     </head>
     <body>
         <header>     
-            <img src="./resources/images/gallery/slide-1.jpg" alt="Abandoned Hallway">
-
             <!-- Nav Bar -->
-            <img src="./resources/images/logo/logo.png" alt="Escapium logo">
-            <nav><ul>
-                <li><a href="./index.html">home</a></li>
-                <li><a href="./about.html">about</a></li>
-                <li><a href="#">features</a></li>
-                <li><a href="./rooms.html">rooms</a></li>
-                <li><a href="#">booking</a></li>
-                <li><a href="./blogs.html">blog</a></li>
-                <li><a href="./contact.html">contacts</a></li>
-            </ul></nav>
-            <p><a href="">Book Now !</a> <i class="fa-solid fa-magnifying-glass"></i> | <i class="fa-solid fa-user"></i> SIGN IN</p>
-            
+            <div class="header_div-navbar">
+                <img src="./resources/images/logo/logo.png" alt="Escapium logo" class="header_img">
+                <i class="fa-regular fa-calendar"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <nav class="header_nav">
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger"/>
+                    <div class="header_div-hamburger">
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="./rooms.html">rooms</a></li>
+                        <li><a href="#">booking</a></li>
+                        <li><a href="./blogs.html">blog</a></li>
+                        <li><a href="./contact.html">contacts</a></li>
+                    </div>
+                </nav>
+            </div>
             <!-- Title -->
-            <h1>Blog<span>.</span></h1>
-            <p>HOME - BLOG</p>
+            <div class="header_div-title">
+                <h1 class="header_h1">blog<span>.</span></h1>
+                <pre class="header_p"><span>ESCAPUM</span>    >   BLOG</pre>
+            </div>
         </header>
 
         <main>
             <!-- Kidnapped Game -->
-            <section>
+            <section class="main_section-blogArticle">
                 <img src="./resources/images/gallery/room-9.jpg" alt="Old clock">
                 <p>Basics</p>
                 <hr>
@@ -43,7 +49,7 @@
             </section>
 
             <!-- What is an Escape Room?-->
-            <section>
+            <section class="main_section-blogArticle">
                 <img src="./resources/images/gallery/post-img-2.jpg" alt="Abandonned classroom">
                 <p>Basics</p>
                 <hr>
@@ -54,7 +60,7 @@
             </section>
             
             <!-- Perfect for Team Building-->
-            <section>
+            <section class="main_section-blogArticle">
                 <img src="./resources/images/gallery/room-7.jpg" alt="Exit indication on old wall">
                 <p>Basics</p>
                 <hr>
@@ -95,7 +101,7 @@
                     <li><img src="./resources/images/gallery/room-9.jpg" alt="Old clock">02/25/2017 <span><hr></span> KIDNAPPED GAME NOW OPEN</li>
                     <li><img src="./resources/images/gallery/post-img-2.jpg" alt="Abandonned classroom">02/13/2017 <span><hr></span> WHAT IS AN ESCAPE ROOM</li>
                     <li><img src="./resources/images/gallery/room-7.jpg" alt="Exit indication on old wall">01/25/2017 <span><hr></span> PERFECT FOR TEAM BUILDING</li>
-                </ul></nav>
+                </ul>
             </section>
 
             <!--Tags-->
@@ -137,6 +143,7 @@
                     <li>SEPTEMBER 2016</li>
                 </ul></nav>
             </section>
+        </main>
 
             <footer>
                 <section class="footer__general-informations">

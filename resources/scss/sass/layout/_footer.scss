@@ -26,10 +26,22 @@ footer {
     background-size: cover;
     background-blend-mode:overlay;
     .footer__general-informations {
+        .column1 {
+            .column1_title {
+                @extend %columnContentHR;
+            }
+        }
         .column2 {
             @extend %noPadding;
+            .column2_title {
+                @extend %columnContentHR;
+            }
         }
-        .column3_content {
+        .column3 {
+            .column3_title {
+                @extend %columnContentHR;
+            }
+            .column3_content {
             @extend %noPadding;
             ul {
                 display: grid;
@@ -54,9 +66,14 @@ footer {
                 .sunday { grid-area: 7 / 1 / 8 / 2; }
                 .sunday-schedule { grid-area: 7 / 2 / 8 / 3; }
         }
+        }
+        
         .column4 {
             display: inline-block;
             width: 100%;
+            .column4_title {
+                @extend %columnContentHR;
+            }
             .column4_content {
                 @extend %noPadding;
                 ul {

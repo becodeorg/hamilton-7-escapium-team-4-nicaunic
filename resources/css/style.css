@@ -5,7 +5,14 @@ main article img {
 main .gmap_canvas {
   max-width: 412px; }
 
-footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3_content ul, footer .footer__general-informations .column4 .column4_content ul {
+footer .footer__general-informations .column1 .column1_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column4 .column4_title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul {
   padding-left: 0px; }
 
 footer {
@@ -15,39 +22,39 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay; }
-  footer .footer__general-informations .column3_content ul {
+  footer .footer__general-informations .column3 .column3_content ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 0px; }
-  footer .footer__general-informations .column3_content .monday {
+  footer .footer__general-informations .column3 .column3_content .monday {
     grid-area: 1 / 1 / 2 / 2; }
-  footer .footer__general-informations .column3_content .monday-schedule {
+  footer .footer__general-informations .column3 .column3_content .monday-schedule {
     grid-area: 1 / 2 / 2 / 3; }
-  footer .footer__general-informations .column3_content .tuesday {
+  footer .footer__general-informations .column3 .column3_content .tuesday {
     grid-area: 2 / 1 / 3 / 2; }
-  footer .footer__general-informations .column3_content .tuesday-schedule {
+  footer .footer__general-informations .column3 .column3_content .tuesday-schedule {
     grid-area: 2 / 2 / 3 / 3; }
-  footer .footer__general-informations .column3_content .wednesday {
+  footer .footer__general-informations .column3 .column3_content .wednesday {
     grid-area: 3 / 1 / 4 / 2; }
-  footer .footer__general-informations .column3_content .wednesday-schedule {
+  footer .footer__general-informations .column3 .column3_content .wednesday-schedule {
     grid-area: 3 / 2 / 4 / 3; }
-  footer .footer__general-informations .column3_content .thursday {
+  footer .footer__general-informations .column3 .column3_content .thursday {
     grid-area: 4 / 1 / 5 / 2; }
-  footer .footer__general-informations .column3_content .thursday-schedule {
+  footer .footer__general-informations .column3 .column3_content .thursday-schedule {
     grid-area: 4 / 2 / 5 / 3; }
-  footer .footer__general-informations .column3_content .friday {
+  footer .footer__general-informations .column3 .column3_content .friday {
     grid-area: 5 / 1 / 6 / 2; }
-  footer .footer__general-informations .column3_content .friday-schedule {
+  footer .footer__general-informations .column3 .column3_content .friday-schedule {
     grid-area: 5 / 2 / 6 / 3; }
-  footer .footer__general-informations .column3_content .saturday {
+  footer .footer__general-informations .column3 .column3_content .saturday {
     grid-area: 6 / 1 / 7 / 2; }
-  footer .footer__general-informations .column3_content .saturday-schedule {
+  footer .footer__general-informations .column3 .column3_content .saturday-schedule {
     grid-area: 6 / 2 / 7 / 3; }
-  footer .footer__general-informations .column3_content .sunday {
+  footer .footer__general-informations .column3 .column3_content .sunday {
     grid-area: 7 / 1 / 8 / 2; }
-  footer .footer__general-informations .column3_content .sunday-schedule {
+  footer .footer__general-informations .column3 .column3_content .sunday-schedule {
     grid-area: 7 / 2 / 8 / 3; }
   footer .footer__general-informations .column4 {
     display: inline-block;

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
 @media screen and (max-width: 412px) {
   main article img {
-    max-width: 100%; }
+    max-width: 412px; }
   main .gmap_canvas {
     max-width: 412px; } }
 @media screen and (min-width: 413px) and (max-width: 768px) {

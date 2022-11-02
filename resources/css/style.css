@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
-main article img {
-  max-width: 100%; }
-main .gmap_canvas {
-  max-width: 412px; }
-
+@media screen and (max-width: 412px) {
+  main article img {
+    max-width: 100%; }
+  main .gmap_canvas {
+    max-width: 412px; } }
+@media screen and (min-width: 412px) and (max-width: 768px) {
+  main article img {
+    max-width: 100%; }
+  main .gmap_canvas {
+    max-width: 768px; } }
 footer .footer__general-informations .column1 .column1_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column4 .column4_title {
   display: flex;
   flex-direction: row;
@@ -122,6 +127,49 @@ footer {
       justify-content: flex-start;
       align-content: flex-start;
       align-items: flex-start; } }
+  @media screen and (min-width: 412px) and (max-width: 768px) {
+    footer .footer__general-informations {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: center;
+      align-items: flex-start; }
+      footer .footer__general-informations h4 {
+        color: #717171;
+        font-size: 15px; }
+      footer .footer__general-informations h5 {
+        font-size: 25px; }
+      footer .footer__general-informations p {
+        color: #717171;
+        font-size: 15px; }
+      footer .footer__general-informations li {
+        color: #717171;
+        font-size: 15px; }
+      footer .footer__general-informations .column1 {
+        width: 125%; }
+      footer .footer__general-informations .column2 {
+        width: 100%; }
+      footer .footer__general-informations .column3 {
+        width: 125%; }
+      footer .footer__general-informations .column4 .column4_content ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        max-width: 75%; }
+        footer .footer__general-informations .column4 .column4_content ul li {
+          height: 15px;
+          width: 15px;
+          padding: 15px;
+          margin: 2.5px;
+          font-size: 15px;
+          border: 0px solid red;
+          border-radius: 50%;
+          background-color: #222222;
+          color: #fefefe; } }
 
 footer {
   font-family: "Hind", sans-serif; }

@@ -6,9 +6,13 @@
     align-items: flex-start;
 }
 
-$button-value: 15px;
-$p-font-size-value: 15px;
-$h-font-size-value: 25px;
+$mobile-button-value: 15px;
+$mobile-p-font-size-value: 15px;
+$mobile-h-font-size-value: 25px;
+
+$tablet-button-value: 15px;
+$tablet-p-font-size-value: 15px;
+$tablet-h-font-size-value: 25px;
 
 %noPadding {
     ul {
@@ -32,14 +36,14 @@ footer {
     background-blend-mode:overlay;
     h4 {
         color: $global-font-color;
-        font-size: $p-font-size-value;
+        font-size: $mobile-p-font-size-value;
     }
     h5 {
-        font-size: $h-font-size-value;
+        font-size: $mobile-h-font-size-value;
     }
     p {
         color: $global-font-color;
-        font-size: $p-font-size-value;
+        font-size: $mobile-p-font-size-value;
     }
     li {
         color: $global-font-color;
@@ -111,11 +115,11 @@ footer {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: $button-value;
-                        width: $button-value;
-                        padding: $button-value;
+                        height: $mobile-button-value;
+                        width: $mobile-button-value;
+                        padding: $mobile-button-value;
                         margin: 5px;
-                        font-size: $button-value;
+                        font-size: $mobile-button-value;
                         border: 0px solid red;
                         border-radius: 50%;
                         background-color: $dark-background;
@@ -164,4 +168,66 @@ footer {
     align-items: flex-start;
     }
 }
+
+@media screen 
+and (min-width: 412px) 
+and (max-width: 768px)
+{ 
+    .footer__general-informations {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content:center;
+        align-items: flex-start;
+        h4 {
+            color: $global-font-color;
+            font-size: $tablet-p-font-size-value;
+        }
+        h5 {
+            font-size: $tablet-h-font-size-value;
+        }
+        p {
+            color: $global-font-color;
+            font-size: $tablet-p-font-size-value;
+        }
+        li {
+            color: $global-font-color;
+            font-size: $tablet-button-value;
+        }
+        .column1 {
+            width: 125%;
+        }
+        .column2 {
+            width: 100%;
+        }
+        .column3 {
+            width: 125%;
+        }
+        .column4 {
+            .column4_content {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                    max-width: 75%;
+                    li {
+                        height: $tablet-button-value;
+                        width: $tablet-button-value;
+                        padding: $tablet-button-value;
+                        margin: 2.5px;
+                        font-size: $tablet-button-value;
+                        border: 0px solid red;
+                        border-radius: 50%;
+                        background-color: $dark-background;
+                        color: $white-background;
+                    }
+                }
+            }
+        }
+        }
+    }
 }

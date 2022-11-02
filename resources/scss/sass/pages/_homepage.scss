@@ -1,10 +1,28 @@
-main {
-    article {
-        img {
-            max-width: 100%;
+@media screen and (max-width: 412px) 
+{ 
+    main {
+        article {
+            img {
+                max-width: 100%;
+            }
+        }
+        .gmap_canvas {
+            max-width: 412px;
         }
     }
-    .gmap_canvas {
-        max-width: 412px;
+}
+@media screen 
+and (min-width: 412px) 
+and (max-width: 768px)
+{ 
+    main {
+        article {
+            img {
+                max-width: 100%;
+            }
+        }
+        .gmap_canvas {
+            max-width: 768px;
+        }
     }
 }

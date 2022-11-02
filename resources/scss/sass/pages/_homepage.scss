@@ -1,0 +1,117 @@
+@use "../sass-utils/variables";
+//reset
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  text-align: center;
+  max-width: 412px;
+  border: 0;
+}
+//Background
+.section__background--dark {
+  background-color: #222222;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+//HR
+.main__hr {
+  text-align: center;
+  width: 35px;
+  height: 4px;
+  background-color: #717171;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+.main__hr--right {
+  @extend .main__hr;
+  margin-left: 35px;
+}
+
+//button
+.main__button--red {
+  background-color: red;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.main__button--border {
+  @extend .main__button--red;
+  background-color: transparent;
+  border: 1px solid #717171;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.button__border--center {
+  @extend .main__button--border;
+  display: flex;
+  margin: auto;
+}
+//Paragraphe
+p {
+  font-family: "Hind", sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  margin: 0;
+  color: #717171;
+}
+
+//Titre
+.main__h2--center {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
+.main__h2--left {
+  @extend .main__h2--center;
+  display: flex;
+  margin-left: 30px;
+}
+.homepage__h2--black {
+  @extend .main__h2--center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+//Formulaire
+input {
+  background-color: transparent;
+  border-bottom: 1.5px solid #717171;
+  margin: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  width: 350px;
+  text-align: left;
+}
+textarea {
+  @extend input;
+  padding: 5px;
+  padding-bottom: 70px;
+}
+::placeholder {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+//Grid Instagram
+.homepage__figure--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  margin: 30px;
+}
+//img instagram
+.homepage__img--instagram {
+  width: 175px;
+}

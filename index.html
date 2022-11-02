@@ -42,21 +42,21 @@
       <section>
         <h1>Escape in 60 mins?</h1>
         <a href="#"
-          ><hr />
+          ><hr class="main__hr">
           VIEW OUR ROOMS</a
         >
         <ul>
-          <li><hr /></li>
-          <li><hr /></li>
-          <li><hr /></li>
-          <li><hr /></li>
+          <li><hr class="main__hr"></li>
+          <li><hr class="main__hr"></li>
+          <li><hr class="main__hr"></li>
+          <li><hr class="main__hr"></li>
         </ul>
       </section>
 
       <!--FeaturedRooms-->
 
       <section>
-        <hr />
+        <hr class="main__hr">
         <h2>Featured Rooms</h2>
 
         <!--PremierArticle-->
@@ -149,7 +149,7 @@
 
       <!--Howitworks-->
       <section>
-        <hr />
+        <hr class="main__hr">
         <h2>How it works</h2>
 
         <!--PremièreArt-->
@@ -185,7 +185,7 @@
 
       <!--Testimonials-->
       <section>
-        <hr />
+        <hr class="main__hr">
         <h2>Testimonials</h2>
         <article>
           <p>
@@ -214,7 +214,7 @@
 
       <!--LatestBlogPosts-->
       <section>
-        <hr />
+        <hr class="main__hr">
         <h2>Latest Blog Posts</h2>
         <a href="#">Browse All Blog Posts</a>
 
@@ -230,7 +230,7 @@
           />
           <span>Andy Bernard</span>
           <p>Promotions</p>
-          <hr />
+          <hr class="main__hr">
           <h3>Kidnapped Game Now Open</h3>
           <p>
             Lorem ipsum dolor sit amet. Ex sapiente accusamus rem excepturi...
@@ -246,7 +246,7 @@
           <img src="./resources/images/avatars/betty-draper.png" alt="Avatar" />
           <span>Betty Drapper</span>
           <p>Team building</p>
-          <hr />
+          <hr class="main__hr">
           <h3>Perfect for Team Building</h3>
           <p>
             Lorem ipsum dolor sit amet. Ex sapiente accusamus rem excepturi. Ex
@@ -266,7 +266,7 @@
           />
           <span>Andy Bernard</span>
           <p>Corporate events</p>
-          <hr />
+          <hr class="main__hr">
           <h3>What is an Escape Room?</h3>
           <p>
             Lorem ipsum dolor sit amet. Ex sapiente accusamus rem excepturi. Ex
@@ -286,45 +286,47 @@
       </section>
 
       <!--InstagramShots-->
-      <section>
-        <hr />
+      <section class="section__background--dark">
+        <hr class="main__hr">
         <h2>Intagram Shots</h2>
         <a href="#">#escapium</a>
         <article>
-          <img
+          <figure class="homepage__figure--grid">
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-7.jpg"
             alt="photo of gallery"
           />
-          <img
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-6.jpg"
             alt="photo of gallery"
           />
-          <img
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-2.jpg"
             alt="photo of gallery"
           />
-          <img
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-1.jpg"
             alt="photo of gallery"
           />
-          <img
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-8.jpg"
             alt="photo of gallery"
           />
-          <img
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-4.jpg"
             alt="photo of gallery"
           />
-          <img
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-5.jpg"
             alt="photo of gallery"
           />
-          <img
+          <img class="homepage__img--instagram"
             src="./resources/images/gallery/gallery-3.jpg"
             alt="photo of gallery"
           />
+        </figure>
         </article>
-        <button>
+        <button class="button__border--center">
           <i class="fa-brands fa-instagram"></i> Follow on Instagram
         </button>
       </section>
@@ -363,29 +365,28 @@
           </style>
         </div>
       </div>
-      <img src="./resources/images/logo/gmap-logo.png" alt="Logo" />
+      
 
       <!--GetInTouch-->
-      <section>
-        <hr />
-        <h2>Get In Touch</h2>
+      
+      <section class="section__background--dark">
+        <hr class="main__hr--right">
+       <h2 class="main__h2--left">Get In Touch</h2>
         <input type="text" placeholder="Your Name..." />
-        <hr />
-        <br />
+
         <input type="text" placeholder="Your Email Address..." />
-        <hr />
+      
+        <textarea id="subject" name="subject" placeholder="Your message..."></textarea>
+       
         <br />
-        <input type="textarea" placeholder="Your Message..." />
-        <hr />
-        <br />
-        <button>Send Message</button>
+        <button class="main__button--border">Send Message</button>
       </section>
 
       <section>
-        <hr />
-        <h2>Ready For The Escape?</h2>
+        <hr class="main__hr">
+        <h2 class="homepage__h2--black">Ready For The Escape?</h2>
         <p>Escape Room gives you the opportunity to have fun</p>
-        <button>Book Your Escape</button>
+        <button class="main__button--red">Book Your Escape</button>
       </section>
     </main>
   </body>

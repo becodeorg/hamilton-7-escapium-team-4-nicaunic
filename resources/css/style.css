@@ -5,7 +5,7 @@
     max-width: 100%; }
   main .gmap_canvas {
     max-width: 412px; } }
-@media screen and (min-width: 412px) and (max-width: 768px) {
+@media screen and (min-width: 413px) and (max-width: 768px) {
   main article img {
     max-width: 100%; }
   main .gmap_canvas {
@@ -126,7 +126,7 @@ footer {
       justify-content: flex-start;
       align-content: flex-start;
       align-items: flex-start; } }
-  @media screen and (min-width: 412px) and (max-width: 768px) {
+  @media screen and (min-width: 413px) and (max-width: 768px) {
     footer .footer__general-informations {
       display: flex;
       flex-direction: row;
@@ -184,8 +184,7 @@ footer {
       font-size: 15px; }
     .footer__general-informations .column1 {
       flex: 1 1 0;
-      width: 0;
-      margin-left: 12.5%; }
+      width: 0; }
     .footer__general-informations .column2 {
       flex: 1 1 0;
       width: 0; }

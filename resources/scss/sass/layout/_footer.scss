@@ -165,7 +165,7 @@ footer {
 }
 
 @media screen 
-and (min-width: 412px) 
+and (min-width: 413px) 
 and (max-width: 768px)
 { 
     .footer__general-informations {
@@ -245,7 +245,6 @@ and (min-width: 768px)
     .column1 {
         flex: 1 1 0;
         width: 0;
-        margin-left: 12.5%;
     }
     .column2 {
         flex: 1 1 0;

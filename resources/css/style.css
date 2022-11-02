@@ -184,7 +184,8 @@ footer {
       font-size: 15px; }
     .footer__general-informations .column1 {
       flex: 1 1 0;
-      width: 0; }
+      width: 0;
+      margin-left: 12.5%; }
     .footer__general-informations .column2 {
       flex: 1 1 0;
       width: 0; }

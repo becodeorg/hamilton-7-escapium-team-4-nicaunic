@@ -67,7 +67,7 @@ footer {
                     align-items: flex-start;
                     align-content: flex-start;
                     li {
-                        padding: 3%;
+                        padding-right: 3%;
                         font-size: 25px;
                     }
                 }
@@ -85,7 +85,22 @@ footer {
             align-items: flex-start;
         }
     }
-}
+    .general_legal_mentions {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+        hr {
+            width: 100%;
+            opacity: 25%;
+        }
+        p {
+            font-size: small;
+            text-align: center;
+        }
+    }
 
 @media screen and (max-width: 412px) 
 { 
@@ -97,14 +112,5 @@ footer {
     align-content: flex-start;
     align-items: flex-start;
     }
-}
-@media screen and (min-width: 412px){
-    .footer__general-informations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
 }
 }

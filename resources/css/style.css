@@ -7,9 +7,7 @@
     max-width: 412px; } }
 @media screen and (min-width: 413px) and (max-width: 768px) {
   main article img {
-    max-width: 100%; }
-  main .gmap_canvas {
-    max-width: 768px; } }
+    max-width: 100%; } }
 footer .footer__general-informations .column1 .column1_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column4 .column4_title {
   display: flex;
   flex-direction: row;

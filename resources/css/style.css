@@ -123,22 +123,21 @@ footer {
 footer {
   font-family: "Hind", sans-serif; }
 
-main article img {
-  max-width: 100%; }
-main .gmap_canvas {
-  max-width: 412px; }
-main * {
+* {
   padding: 0px;
   margin: 0px;
   border: 0px;
   text-align: center;
   max-width: 412px;
-  border: 0; }
-main .section__background--dark {
+  border: 0;
+  list-style: none; }
+
+.section__background--dark {
   background-color: #222222;
   padding-top: 5px;
   padding-bottom: 20px; }
-main .main__hr, main .main__hr--right {
+
+.main__hr, .main__hr--right {
   text-align: center;
   width: 35px;
   height: 4px;
@@ -146,9 +145,11 @@ main .main__hr, main .main__hr--right {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 45px; }
-main .main__hr--right {
+
+.main__hr--right {
   margin-left: 35px; }
-main .main__button--red, main .main__button--border, main .button__border--center {
+
+.main__button--red, .main__button--border, .button__border--center {
   background-color: red;
   color: white;
   padding: 15px 30px 15px 30px;
@@ -158,34 +159,55 @@ main .main__button--red, main .main__button--border, main .button__border--cente
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
   margin-top: 30px; }
-main .main__button--border, main .button__border--center {
+
+.main__button--border, .button__border--center {
   background-color: transparent;
   border: 1px solid #717171;
   display: flex;
   margin-left: 10px;
   margin-top: 40px; }
-main .button__border--center {
+
+.button__border--center {
   display: flex;
   margin: auto; }
-main p {
+
+.button__text--flex {
+  display: flex;
+  align-items: center; }
+
+.fa-instagram {
+  text-align: center;
+  margin-right: 10px; }
+
+p {
   font-family: "Hind", sans-serif;
   font-size: 14px;
   margin-top: 10px;
   margin: 0;
   color: #717171; }
-main .main__h2--center, main .main__h2--left, main .homepage__h2--black {
+
+.main__a-tag {
+  color: red;
+  font-family: "Hind", sans-serif;
+  font-size: 10px; }
+
+.main__h2--center, .main__h2--left, .homepage__h2--black, .otherarticle__li--text {
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
-  font-size: 19px; }
-main .main__h2--left {
+  font-size: 19px;
+  margin-bottom: 20px; }
+
+.main__h2--left {
   display: flex;
   margin-left: 30px; }
-main .homepage__h2--black {
+
+.homepage__h2--black {
   color: black;
   margin-bottom: 20px; }
-main input, main textarea {
+
+input, textarea {
   background-color: transparent;
   border-bottom: 1.5px solid #717171;
   margin: 15px;
@@ -193,38 +215,60 @@ main input, main textarea {
   font-size: 14px;
   width: 350px;
   text-align: left; }
-main textarea {
+
+textarea {
   padding: 5px;
   padding-bottom: 70px; }
-main ::placeholder {
+
+::placeholder {
   text-align: left;
+  color: #717171;
   font-family: "Montserrat", sans-serif;
   font-size: 14px; }
-main .homepage__figure--grid {
+
+.homepage__figure--grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 5px;
-  margin: 30px; }
-main .homepage__img--instagram {
+  margin: 30px;
+  margin-top: 50px; }
+
+.homepage__img--instagram {
   width: 175px; }
 
-main article img {
-  max-width: 100%; }
-main .gmap_canvas {
-  max-width: 412px; }
-main * {
+.homepage__otherarticle {
+  background-image: linear-gradient(290deg, rgba(0, 0, 0, 0) 0%, black 100%), url(/resources/images/gallery/room-7.jpg);
+  background-size: cover;
+  padding: 20px; }
+
+.otherarticle__li--text {
+  font-weight: 700;
+  display: flex;
+  margin-left: 30px;
+  padding: 20px;
+  margin: 0; }
+
+.i-red {
+  color: red;
+  margin-right: 10px;
+  font-size: 32px; }
+
+* {
   padding: 0px;
   margin: 0px;
   border: 0px;
   text-align: center;
   max-width: 412px;
-  border: 0; }
-main .section__background--dark {
+  border: 0;
+  list-style: none; }
+
+.section__background--dark {
   background-color: #222222;
   padding-top: 5px;
   padding-bottom: 20px; }
-main .main__hr, main .main__hr--right {
+
+.main__hr, .main__hr--right {
   text-align: center;
   width: 35px;
   height: 4px;
@@ -232,9 +276,11 @@ main .main__hr, main .main__hr--right {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 45px; }
-main .main__hr--right {
+
+.main__hr--right {
   margin-left: 35px; }
-main .main__button--red, main .main__button--border, main .button__border--center {
+
+.main__button--red, .main__button--border, .button__border--center {
   background-color: red;
   color: white;
   padding: 15px 30px 15px 30px;
@@ -244,34 +290,55 @@ main .main__button--red, main .main__button--border, main .button__border--cente
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
   margin-top: 30px; }
-main .main__button--border, main .button__border--center {
+
+.main__button--border, .button__border--center {
   background-color: transparent;
   border: 1px solid #717171;
   display: flex;
   margin-left: 10px;
   margin-top: 40px; }
-main .button__border--center {
+
+.button__border--center {
   display: flex;
   margin: auto; }
-main p {
+
+.button__text--flex {
+  display: flex;
+  align-items: center; }
+
+.fa-instagram {
+  text-align: center;
+  margin-right: 10px; }
+
+p {
   font-family: "Hind", sans-serif;
   font-size: 14px;
   margin-top: 10px;
   margin: 0;
   color: #717171; }
-main .main__h2--center, main .main__h2--left, main .homepage__h2--black {
+
+.main__a-tag {
+  color: red;
+  font-family: "Hind", sans-serif;
+  font-size: 10px; }
+
+.main__h2--center, .main__h2--left, .homepage__h2--black, .otherarticle__li--text {
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
-  font-size: 19px; }
-main .main__h2--left {
+  font-size: 19px;
+  margin-bottom: 20px; }
+
+.main__h2--left {
   display: flex;
   margin-left: 30px; }
-main .homepage__h2--black {
+
+.homepage__h2--black {
   color: black;
   margin-bottom: 20px; }
-main input, main textarea {
+
+input, textarea {
   background-color: transparent;
   border-bottom: 1.5px solid #717171;
   margin: 15px;
@@ -279,21 +346,44 @@ main input, main textarea {
   font-size: 14px;
   width: 350px;
   text-align: left; }
-main textarea {
+
+textarea {
   padding: 5px;
   padding-bottom: 70px; }
-main ::placeholder {
+
+::placeholder {
   text-align: left;
+  color: #717171;
   font-family: "Montserrat", sans-serif;
   font-size: 14px; }
-main .homepage__figure--grid {
+
+.homepage__figure--grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 5px;
-  margin: 30px; }
-main .homepage__img--instagram {
+  margin: 30px;
+  margin-top: 50px; }
+
+.homepage__img--instagram {
   width: 175px; }
+
+.homepage__otherarticle {
+  background-image: linear-gradient(290deg, rgba(0, 0, 0, 0) 0%, black 100%), url(/resources/images/gallery/room-7.jpg);
+  background-size: cover;
+  padding: 20px; }
+
+.otherarticle__li--text {
+  font-weight: 700;
+  display: flex;
+  margin-left: 30px;
+  padding: 20px;
+  margin: 0; }
+
+.i-red {
+  color: red;
+  margin-right: 10px;
+  font-size: 32px; }
 
 footer .footer__general-informations .column1 .column1_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column4 .column4_title {
   display: flex;

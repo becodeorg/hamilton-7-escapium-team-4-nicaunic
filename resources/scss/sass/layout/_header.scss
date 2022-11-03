@@ -8,8 +8,15 @@ header {
 .header_div-navbar {
     display: flex;
     background-color: rgba(28, 29, 27, 0.3);
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    i {
+        color: white;
+    }
+}
+
+.header_i-user {
+    display: none;
 }
 
 .header_img {
@@ -29,43 +36,91 @@ header {
     display: inline;
 }
 
-@media screen and (max-width: 412px) {
-    p, a, pre {
-        font-size: 14px;
+.header_h1 {
+    padding-top: 75px;
+    text-align: center;
+    font-weight: bold;
+      
+       
+    span {
+        color: red;
     }
+}
 
-    .header_h1 {
-        font-size: 32px;
-        padding-top: 75px;
-        text-align: center;
-        font-weight: bold;
-        
-        
-        span {
-            color: red;
-        }
+.header_p {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-bottom: 60px;
+
+    span {
+        color: white;
     }
+        
+}
 
+header { 
+    .fa-calendar {
+        border: 2px solid #3D3D3D;
+        border-radius: 90%;
+        padding: 10px;
+        margin-left: 100px;
+    }
+}
+    
+@media screen and (min-width: 413px) {
     .header_p {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 15px;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
+    }
+}
 
-        span {
-            color: white;
-        }
-        
+@media only screen and (min-width: 769px) {
+    .header_img {
+        width: 25%;
     }
 
-    header { 
-        .fa-calendar {
-            border: 2px solid #3D3D3D;
-            border-radius: 90%;
-            padding: 10px;
-            margin-left: 100px;
+    .header_div-navbar {
+        p {
+            line-height: 60px;
+            vertical-align: center;
         }
+        .first-div {
+            display: flex;
+            flex-direction: row;
+            vertical-align: center;
+        }
+    }
+    .header_nav {
+        li {
+        font-weight: bold;
+        margin-left: 15px;
+        line-height: 60px;
+        vertical-align: center;
+        }
+    }
+
+    .last_div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_i-calendar {
+        display: none;
+    }
+
+    .header_i-user {
+        display: inline;
     }
     
+    .header_button {
+        display: block;
+    border-radius: 25px;
+    background-color: $darkest-background;
+    border: 2px solid #3D3D3D;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0 10px 10px;
+    padding: 15px 35px;
+    }
 }

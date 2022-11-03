@@ -86,106 +86,43 @@ h1, h2, h3 {
 p, .p--left, a, pre, button, li {
   font-family: "Hind", sans-serif;
   color: #717171;
+  font-size: 14px;
 }
 
-@media screen and (max-width: 412px) {
-  p, .p--left, a, pre {
-    font-size: 14px;
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.section_p-littleText {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 120px;
   }
   h2 {
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 44px;
   }
   h3 {
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 32px;
+  }
+  p, .p--left, a, pre, button, li {
+    font-size: 16px;
   }
   .section_p-littleText {
     font-size: 11px;
-  }
-}
-@media screen and (max-width < 412px) {
-  .hamburger_div {
-    display: block;
-    position: relative;
-    top: 50px;
-    right: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  .hamburger_div a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
-  }
-  .hamburger_div a:hover {
-    color: tomato;
-  }
-  .hamburger_div input, .hamburger_div textarea {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    right: -5px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-    -webkit-touch-callout: none;
-  }
-  .hamburger_div span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-  .hamburger_div span:first-child {
-    transform-origin: 0% 0%;
-  }
-  .hamburger_div span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-  .hamburger_div input:checked ~ span, .hamburger_div textarea:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-  }
-  .hamburger_div input:checked ~ ul, .hamburger_div textarea:checked ~ ul {
-    transform: none;
-  }
-  .hamburger-menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #ededed;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  .hamburger-menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-  .main_button {
-    display: block;
-    border-radius: 25px;
-    background-color: #1B1B1B;
-    border: 2px solid #3D3D3D;
-    color: white;
-    font-weight: bold;
-    margin: 30px 0 30px 10px;
-    padding: 15px 35px;
   }
 }
 header {
@@ -198,8 +135,14 @@ header {
 .header_div-navbar {
   display: flex;
   background-color: rgba(28, 29, 27, 0.3);
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.header_div-navbar i {
+  color: white;
+}
+
+.header_i-user {
+  display: none;
 }
 
 .header_img {
@@ -218,34 +161,76 @@ header {
   display: inline;
 }
 
-@media screen and (max-width: 412px) {
-  p, .p--left, a, pre {
-    font-size: 14px;
-  }
-  .header_h1 {
-    font-size: 32px;
-    padding-top: 75px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .header_h1 span {
-    color: red;
-  }
+.header_h1 {
+  padding-top: 75px;
+  text-align: center;
+  font-weight: bold;
+}
+.header_h1 span {
+  color: red;
+}
+
+.header_p {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-bottom: 60px;
+}
+.header_p span {
+  color: white;
+}
+
+header .fa-calendar {
+  border: 2px solid #3D3D3D;
+  border-radius: 90%;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+@media screen and (min-width: 413px) {
   .header_p {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .header_img {
+    width: 25%;
+  }
+  .header_div-navbar p, .header_div-navbar .p--left {
+    line-height: 60px;
+    vertical-align: center;
+  }
+  .header_div-navbar .first-div {
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+  }
+  .header_nav li {
+    font-weight: bold;
+    margin-left: 15px;
+    line-height: 60px;
+    vertical-align: center;
+  }
+  .last_div {
+    display: flex;
+    flex-direction: row;
+  }
+  .header_i-calendar {
+    display: none;
+  }
+  .header_i-user {
+    display: inline;
+  }
+  .header_button {
     display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 15px;
-    padding-bottom: 60px;
-  }
-  .header_p span {
-    color: white;
-  }
-  header .fa-calendar {
+    border-radius: 25px;
+    background-color: #1B1B1B;
     border: 2px solid #3D3D3D;
-    border-radius: 90%;
-    padding: 10px;
-    margin-left: 100px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0 10px 10px;
+    padding: 15px 35px;
   }
 }
 footer .footer__general-informations .column4 .column4_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column1 .column1_title {
@@ -737,17 +722,17 @@ body {
   background-color: #1b1b1b;
 }
 
-header {
+.blogs_header {
   background-image: url("../images/gallery/slide-1.jpg");
 }
 
-hr {
+.section_hr {
   border-bottom: 3px solid #3D3D3D;
   width: 10%;
   margin: 20px 10px 20px 20px;
 }
 
-h3 {
+.section_h3 {
   margin-left: 20px;
 }
 
@@ -763,7 +748,7 @@ h3 {
 }
 
 .main_section-blogArticle {
-  width: 95%;
+  width: 90%;
   background-color: #222222;
   margin: 50px auto;
   padding-bottom: 15px;
@@ -809,6 +794,7 @@ h3 {
   background-color: #1b1b1b;
   border: 2px solid #3D3D3D;
   color: white;
+  width: 50px;
 }
 
 .main_button-red:hover {
@@ -895,6 +881,16 @@ h3 {
 }
 .main_section-archive hr {
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 413px) {
+  main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .div_section-categories {
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

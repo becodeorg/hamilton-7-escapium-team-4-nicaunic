@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
 @use "./sass/base/reset";
-footer {
+footer, header {
   font-family: "Hind", sans-serif; }
 
 h1, h2, h3 {
@@ -99,56 +99,92 @@ p, .p--left, a, pre, button, li {
     font-weight: bold;
     margin: 30px 0 30px 10px;
     padding: 15px 35px; } }
+footer, header {
+  font-family: "Hind", sans-serif; }
+
 header {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.header_div-navbar {
-  display: flex;
-  background-color: rgba(28, 29, 27, 0.3);
-  align-items: center;
-  justify-content: center; }
-
-.header_img {
-  display: inline;
-  width: 40%; }
-
-.header_nav {
-  display: inline; }
-  .header_nav li {
-    display: inline; }
-
-.header_p {
-  display: inline; }
-
-@media screen and (max-width: 412px) {
-  p, .p--left, a, pre {
-    font-size: 14px; }
-
-  .header_h1 {
+  header img {
+    width: 40%; }
+  header #hamburger {
+    display: none; }
+  header #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-decoration: none; }
+  header #hamnav label {
+    display: inline-block;
+    color: #fefefe;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px; }
+  header #hamitems {
+    display: none; }
+  header #hamnav input:checked ~ #hamitems, header #hamnav textarea:checked ~ #hamitems {
+    display: block; }
+  header .navbar {
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end; }
+    header .navbar p, header .navbar .p--left {
+      display: none; }
+    header .navbar .fa-calendar {
+      color: #fefefe;
+      border: 2px solid #3D3D3D;
+      border-radius: 90%;
+      padding: 10px; }
+    header .navbar .fa-magnifying-glass {
+      color: #fefefe;
+      border: 2px none #3D3D3D;
+      border-radius: 90%;
+      padding: 10px; }
+    header .navbar .navbar-buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: flex-start;
+      align-content: flex-end; }
+  header p, header .p--left, header a, header pre {
+    font-size: 15px; }
+  header h1 {
     font-size: 32px;
     padding-top: 75px;
     text-align: center;
     font-weight: bold; }
-    .header_h1 span {
+    header h1 span {
       color: red; }
+    header h1 p, header h1 .p--left {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 15px;
+      padding-bottom: 60px; }
+      header h1 p span, header h1 .p--left span {
+        color: white; }
+  header .directory-buttons {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    font-size: 15px;
+    color: #717171; }
+    header .directory-buttons a {
+      font-size: 15px;
+      color: #fefefe;
+      text-decoration: none; }
 
-  .header_p {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 15px;
-    padding-bottom: 60px; }
-    .header_p span {
-      color: white; }
-
-  header .fa-calendar {
-    border: 2px solid #3D3D3D;
-    border-radius: 90%;
-    padding: 10px;
-    margin-left: 100px; } }
 footer .footer__general-informations .column1 .column1_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column4 .column4_title {
   display: flex;
   flex-direction: row;
@@ -406,6 +442,8 @@ p, .p--left {
   margin-left: 30px;
   margin-right: 30px;
   color: #717171; }
+  p a, .p--left a {
+    color: #f60b0e; }
 
 .p--left {
   text-align: left; }

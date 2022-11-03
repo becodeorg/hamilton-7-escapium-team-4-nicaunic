@@ -31,12 +31,6 @@ header {
             padding-left: 10px;
         }
 
-        hr {
-            border-bottom: 3px solid #3D3D3D;
-            width: 10%;
-            margin: 20px 10px;
-        }
-
         i {
             color: white;
         }
@@ -65,4 +59,48 @@ header {
 
 .little-text {
     padding-top: 10px;
+}
+
+.rooms_page_selection {
+    text-align: center;
+}
+
+.blogs_button-red {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: $darkest-background;
+    border: 2px solid #3D3D3D;
+    color: white;
+}
+.blogs_button-red:hover {
+        background-color: red;
+        border: none;
+        padding: 17px;
+}
+
+
+.blogs_button-hidden {
+    visibility: hidden;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+hr {
+    border-bottom: 3px solid #3D3D3D;
+    width: 10%;
+    margin: 20px 10px;
+    margin-left: 20px;
+}
+
+.categories-nav {
+    margin-left: 20px;
+    padding-bottom: 50px;
+
+    li {
+        margin-bottom: 20px;
+    }
 }

@@ -1,77 +1,256 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
-/* Remise à zéro des marges et des paddings de la page*/
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+footer .footer__general-informations .column4 .column4_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column1 .column1_title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+footer .footer__general-informations .column4 .column4_content ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column2 ul {
+  padding-left: 0px;
 }
 
-/* Retrait des puces sur les listes */
-ol, ul {
-  list-style: none;
+footer {
+  background-color: #222222;
+  color: #fefefe;
+  background-image: url("../../../../resources/images/gallery/slide-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
-
-a {
+footer h4 {
+  color: #717171;
+  font-size: 15px;
+}
+footer h5 {
+  font-size: 25px;
+}
+footer p {
+  color: #717171;
+  font-size: 15px;
+}
+footer li {
+  color: #717171;
+}
+footer .footer__general-informations .column1 .column1_content a {
+  color: #fefefe;
   text-decoration: none;
 }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+footer .footer__general-informations .column3 .column3_content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+footer .footer__general-informations .column3 .column3_content .monday {
+  grid-area: 1/1/2/2;
+}
+footer .footer__general-informations .column3 .column3_content .monday-schedule {
+  grid-area: 1/2/2/3;
+}
+footer .footer__general-informations .column3 .column3_content .tuesday {
+  grid-area: 2/1/3/2;
+}
+footer .footer__general-informations .column3 .column3_content .tuesday-schedule {
+  grid-area: 2/2/3/3;
+}
+footer .footer__general-informations .column3 .column3_content .wednesday {
+  grid-area: 3/1/4/2;
+}
+footer .footer__general-informations .column3 .column3_content .wednesday-schedule {
+  grid-area: 3/2/4/3;
+}
+footer .footer__general-informations .column3 .column3_content .thursday {
+  grid-area: 4/1/5/2;
+}
+footer .footer__general-informations .column3 .column3_content .thursday-schedule {
+  grid-area: 4/2/5/3;
+}
+footer .footer__general-informations .column3 .column3_content .friday {
+  grid-area: 5/1/6/2;
+}
+footer .footer__general-informations .column3 .column3_content .friday-schedule {
+  grid-area: 5/2/6/3;
+}
+footer .footer__general-informations .column3 .column3_content .saturday {
+  grid-area: 6/1/7/2;
+}
+footer .footer__general-informations .column3 .column3_content .saturday-schedule {
+  grid-area: 6/2/7/3;
+}
+footer .footer__general-informations .column3 .column3_content .sunday {
+  grid-area: 7/1/8/2;
+}
+footer .footer__general-informations .column3 .column3_content .sunday-schedule {
+  grid-area: 7/2/8/3;
+}
+footer .footer__general-informations .column4 {
+  display: inline-block;
+}
+footer .footer__general-informations .column4 .column4_content ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+footer .footer__general-informations .column4 .column4_content ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  padding: 15px;
+  margin: 5px;
+  font-size: 15px;
+  border: 0px solid red;
+  border-radius: 50%;
+  background-color: #222222;
+  color: #fefefe;
+}
+footer .footer__general-informations li {
+  list-style-type: none;
+}
+footer .footer__general-informations hr {
+  border-color: #F60B0E;
+  width: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
+  align-items: flex-start;
+}
+footer .general_legal_mentions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+footer .general_legal_mentions hr {
+  width: 100%;
+  opacity: 25%;
+}
+footer .general_legal_mentions p {
+  font-size: small;
+  text-align: center;
+}
+@media screen and (max-width: 412px) {
+  footer .footer__general-informations {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 413px) and (max-width: 768px) {
+  footer .footer__general-informations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+  }
+  footer .footer__general-informations h4 {
+    color: #717171;
+    font-size: 15px;
+  }
+  footer .footer__general-informations h5 {
+    font-size: 20px;
+  }
+  footer .footer__general-informations p {
+    color: #717171;
+    font-size: 15px;
+  }
+  footer .footer__general-informations li {
+    color: #717171;
+    font-size: 15px;
+  }
+  footer .footer__general-informations .column1 {
+    width: 20%;
+  }
+  footer .footer__general-informations .column2 {
+    width: 20%;
+  }
+  footer .footer__general-informations .column3 {
+    width: 20%;
+  }
+  footer .footer__general-informations .column3 .column3_content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  footer .footer__general-informations .column4 {
+    width: 20%;
+  }
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+@media screen and (min-width: 768px) {
+  .footer__general-informations {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+  }
+  .footer__general-informations h4 {
+    color: #717171;
+    font-size: 15px;
+  }
+  .footer__general-informations h5 {
+    font-size: 20px;
+  }
+  .footer__general-informations p {
+    color: #717171;
+    font-size: 15px;
+  }
+  .footer__general-informations li {
+    color: #717171;
+    font-size: 15px;
+  }
+  .footer__general-informations .column1 {
+    flex: 1 1 0;
+    width: 0;
+  }
+  .footer__general-informations .column2 {
+    flex: 1 1 0;
+    width: 0;
+  }
+  .footer__general-informations .column3 {
+    flex: 1 1 0;
+    width: 0;
+  }
+  .footer__general-informations .column3 .column3_content ul {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .footer__general-informations .column4 {
+    flex: 1 1 0;
+    width: 0;
+  }
+  .footer__general-informations .column4 .column4_content ul {
+    width: 50%;
+  }
 }
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+footer {
+  font-family: "Hind", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

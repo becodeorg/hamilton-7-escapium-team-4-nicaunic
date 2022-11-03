@@ -1,1 +1,8 @@
-@import "./sass/pages/homepage", "./sass/layout/footer", "./sass/sass-utils/variables", "./sass/base/typography", "./sass/layout/header", "./sass/pages/blogs";
+@use "./sass/base/reset";
+@import "./sass/base/typography";
+@import "./sass/sass-utils/variables";
+@import "./sass/components/buttons";
+@import "./sass/layout/header";
+@import "./sass/layout/footer";
+@import "./sass/pages/homepage";
+@import "./sass/pages/blogs";

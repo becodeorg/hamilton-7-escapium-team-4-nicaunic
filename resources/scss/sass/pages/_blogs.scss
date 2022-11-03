@@ -1,0 +1,106 @@
+body {
+    background-color: $darkest-background;
+}
+
+header {
+    background-image: url("../images/gallery/slide-1.jpg");
+    
+}
+
+@media screen and (max-width: 412px) {
+    .main_section-blogArticle{
+        width: 95%;
+        background-color: $dark-background;
+        margin: 50px auto;
+        padding-bottom: 35px;
+
+        img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 21px;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-top: 25px;
+        }
+
+        p, a {
+            padding-left: 10px;
+        }
+
+        i {
+            color: white;
+        }
+        
+        a {
+            display: inline-block;
+            color: white;
+            border: 2px solid #3D3D3D;
+            padding: 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.section_p-info {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    i {
+        padding-left: 10px;
+    }
+}
+
+.little-text {
+    padding-top: 10px;
+}
+
+.rooms_page_selection {
+    text-align: center;
+}
+
+.blogs_button-red {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: $darkest-background;
+    border: 2px solid #3D3D3D;
+    color: white;
+}
+.blogs_button-red:hover {
+        background-color: red;
+        border: none;
+        padding: 17px;
+}
+
+
+.blogs_button-hidden {
+    visibility: hidden;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+hr {
+    border-bottom: 3px solid #3D3D3D;
+    width: 10%;
+    margin: 20px 10px;
+    margin-left: 20px;
+}
+
+.categories-nav {
+    margin-left: 20px;
+    padding-bottom: 50px;
+
+    li {
+        margin-bottom: 20px;
+    }
+}

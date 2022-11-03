@@ -104,3 +104,67 @@ hr {
         margin-bottom: 20px;
     }
 }
+
+.recent-post {
+    li {
+        font-size: 11px;
+        color: $global-font-color;
+        margin-left: 20px;
+        margin-bottom: 75px;
+    }
+
+    span {
+        color: white;
+        font-weight: bold;
+    }
+
+    ul {
+        padding-top: 40px;
+    }
+
+    .date-title-separator  {
+        margin: 0;
+        color: red;
+        width: 10px;
+        display: inline-block;
+        vertical-align: center;
+        border: 1px solid #3D3D3D;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 20px;
+    }
+    
+}
+
+.tags {
+    margin-bottom: 40px;
+
+    div {
+        margin-left: 20px;
+    }
+    button {
+        padding: 15px;
+        border-radius: 25px;
+        background-color: $darkest-background;
+        border: 2px solid #3D3D3D;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 10px;
+        }
+}
+
+.instagram {
+    margin-bottom: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  img {
+    width: 100%;
+  }
+}

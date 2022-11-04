@@ -7,6 +7,7 @@ $nav-font-color: #777;
 
 $button-value: 15px;
 $p-font-size-value: 10px;
+$global-font-size: 14px;
 $h-font-size-value: 25px;
 
 %Hind {
@@ -51,9 +52,9 @@ header {
         align-items: center;
         align-content: flex-end;
         img {
-            max-width: 10rem;
+        max-width: 11rem;
         }
-        p {
+        button {
             display: none;
         }
         .fa-calendar {
@@ -77,11 +78,12 @@ header {
             justify-content: flex-end;
             align-items: flex-start;
             align-content: flex-end;
+            font-size: $global-font-size;
         }
     }
-    p, a, pre {
-        font-size: $p-font-size-value;
-    }
+    //p, a, pre {
+        //font-size: $p-font-size-value;
+    //}
     h1 {
         font-size: 32px;
         padding-top: 75px;
@@ -102,7 +104,7 @@ header {
         }
     }
     .directory-buttons {
-        margin-top: 5%;
+        margin-top: 2%;
         padding-bottom: 10%;
         display: flex;
         flex-direction: row;
@@ -121,6 +123,65 @@ header {
     }
 }
 
-@media only screen and (min-width: 413px) {
+@media only screen and (min-width: 769px) {
+    h1 {
+        font-size: 120px !important;
+    }
+    
+    .navbar {
+        justify-content: flex-start !important;
+    }
 
+    .navbar-buttons {
+        flex-direction: row-reverse !important;
+        width: 95%;
+        justify-content: space-between !important;
+        line-height: 40px;
+
+        label {
+            display: none !important;
+        }
+        ul {
+            display: flex !important;
+            flex-direction: row;
+            align-self: flex-start;
+        }
+        li {
+            margin-left: 5%;
+        }
+
+        .end {
+            justify-self: flex-end;
+            align-self: flex-end;
+            padding-right: 3%;
+        }
+        .fa-calendar {
+            display: none;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .main_button {
+            padding : 1px 30px;
+            margin: 0 0;
+            display: inline;
+        }
+
+        .main_button:hover {
+            background-color: red;
+            border: none;
+        }
+
+        i {
+            margin: 0 5px;
+        }
+    
+    }
+    header {
+        .directory-buttons {
+            padding-bottom: 90px;
+        }
+    }
 }

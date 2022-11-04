@@ -17,7 +17,6 @@ footer {
   color: #fefefe;
   background-image: url("../../../../resources/images/gallery/slide-3.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-blend-mode: overlay; }
   footer h4 {
     color: #717171;
@@ -111,7 +110,7 @@ footer {
       font-size: small;
       text-align: center; }
   @media screen and (max-width: 412px) {
-    footer .footer__general-informations {
+    footer footer .footer__general-informations {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -119,11 +118,52 @@ footer {
       align-content: flex-start;
       align-items: flex-start; } }
   @media screen and (min-width: 413px) and (max-width: 768px) {
+    footer footer {
+      min-width: 768px; }
+      footer footer .footer__general-informations {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: flex-start; }
+        footer footer .footer__general-informations h4 {
+          color: #717171;
+          font-size: 15px; }
+        footer footer .footer__general-informations h5 {
+          font-size: 20px; }
+        footer footer .footer__general-informations p {
+          color: #717171;
+          font-size: 15px; }
+        footer footer .footer__general-informations li {
+          color: #717171;
+          font-size: 15px; }
+        footer footer .footer__general-informations .column1 {
+          width: 20%; }
+        footer footer .footer__general-informations .column2 {
+          width: 20%; }
+        footer footer .footer__general-informations .column3 {
+          width: 20%; }
+          footer footer .footer__general-informations .column3 .column3_content ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px; }
+        footer footer .footer__general-informations .column4 {
+          width: 20%; } }
+
+@media screen and (min-width: 768px) {
+  footer {
+    min-width: 1920px; }
     footer .footer__general-informations {
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-around;
+      justify-content: center;
       align-content: center;
       align-items: flex-start; }
       footer .footer__general-informations h4 {
@@ -138,63 +178,28 @@ footer {
         color: #717171;
         font-size: 15px; }
       footer .footer__general-informations .column1 {
-        width: 20%; }
+        flex: 1 1 0;
+        width: 0; }
       footer .footer__general-informations .column2 {
-        width: 20%; }
+        flex: 1 1 0;
+        width: 0; }
       footer .footer__general-informations .column3 {
-        width: 20%; }
+        flex: 1 1 0;
+        width: 0; }
         footer .footer__general-informations .column3 .column3_content ul {
+          width: fit-content;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(7, 1fr);
           grid-column-gap: 0px;
           grid-row-gap: 0px; }
       footer .footer__general-informations .column4 {
-        width: 20%; } }
-
-@media screen and (min-width: 768px) {
-  .footer__general-informations {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-start; }
-    .footer__general-informations h4 {
-      color: #717171;
-      font-size: 15px; }
-    .footer__general-informations h5 {
-      font-size: 20px; }
-    .footer__general-informations p {
-      color: #717171;
-      font-size: 15px; }
-    .footer__general-informations li {
-      color: #717171;
-      font-size: 15px; }
-    .footer__general-informations .column1 {
-      flex: 1 1 0;
-      width: 0; }
-    .footer__general-informations .column2 {
-      flex: 1 1 0;
-      width: 0; }
-    .footer__general-informations .column3 {
-      flex: 1 1 0;
-      width: 0; }
-      .footer__general-informations .column3 .column3_content ul {
-        width: fit-content;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px; }
-    .footer__general-informations .column4 {
-      flex: 1 1 0;
-      width: 0; }
-      .footer__general-informations .column4 .column4_content ul {
-        width: 50%; } }
+        flex: 1 1 0;
+        width: 0; }
+        footer .footer__general-informations .column4 .column4_content ul {
+          width: 50%; }
+    footer .general_legal_mentions {
+      min-width: 1920px; } }
 footer, header {
   font-family: "Hind", sans-serif; }
 
@@ -845,32 +850,75 @@ main .main__button--red, main .main__button--right, main .main__button--border, 
 footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul, body ul {
   padding-left: 0px; }
 
-body ul {
-  list-style: none; }
-body .difficulty_level_selection {
+body .rooms__list .Magic_Imporium, body .rooms__list .The_Cure, body .rooms__list .Burlesque, body .rooms__list .The_Hospital, body .rooms__list .Abandoned_Factory, body .rooms__list .Bunker_51, body .rooms__list .The_Mystical_Room, body .rooms__list .Back_To_The_Future {
+  background-size: cover;
+  background-color: #222222;
+  background-blend-mode: overlay;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 25px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  align-content: center;
   flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 33px;
+  padding-bottom: 33px; }
+
+body {
   width: 100%; }
-  body .difficulty_level_selection button {
-    background-color: transparent;
-    background-color: transparent;
-    border: 1px solid #717171;
+  body ul {
+    list-style: none; }
+  body .difficulty_level_selection {
     display: flex;
     justify-content: center;
-    margin-bottom: -10px;
-    width: 100px;
-    text-align: center; }
-  body .difficulty_level_selection .red-button {
-    background-color: #f60b0e; }
-body .rooms__list .red {
-  color: #f60b0e; }
-body .rooms__list img {
-  max-width: 412px; }
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 100%; }
+    body .difficulty_level_selection button {
+      background-color: transparent;
+      background-color: transparent;
+      border: 1px solid #717171;
+      display: flex;
+      justify-content: center;
+      margin-bottom: -10px;
+      width: 100px;
+      text-align: center; }
+    body .difficulty_level_selection .red-button {
+      background-color: #f60b0e; }
+  body .rooms__list {
+    width: 100%; }
+    body .rooms__list .red {
+      color: #f60b0e; }
+    body .rooms__list .room-details {
+      display: flex;
+      flex-direction: row; }
+      body .rooms__list .room-details .players {
+        margin-right: 10px; }
+      body .rooms__list .room-details .time_required {
+        margin-right: 10px; }
+    body .rooms__list .Magic_Imporium {
+      background-image: url("../../../../resources/images/gallery/slide-2.jpg"); }
+    body .rooms__list .The_Cure {
+      background-image: url("../../../../resources/images/gallery/room-2.jpg"); }
+    body .rooms__list .Burlesque {
+      background-image: url("../../../../resources/images/gallery/room-3.jpg"); }
+    body .rooms__list .The_Hospital {
+      background-image: url("../../../../resources/images/gallery/room-5.jpg"); }
+    body .rooms__list .Abandoned_Factory {
+      background-image: url("../../../../resources/images/gallery/gallery-1.jpg"); }
+    body .rooms__list .Bunker_51 {
+      background-image: url("../../../../resources/images/gallery/room-7.jpg"); }
+    body .rooms__list .The_Mystical_Room {
+      background-image: url("../../../../resources/images/gallery/gallery-8.jpg"); }
+    body .rooms__list .Back_To_The_Future {
+      background-image: url("../../../../resources/images/gallery/room-9.jpg"); }
+  body .rooms_page_selection {
+    display: none; }
 
 main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center, body .difficulty_level_selection button {
   background-color: red;
@@ -886,32 +934,75 @@ main .main__button--red, main .main__button--right, main .main__button--border, 
 footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul, body ul {
   padding-left: 0px; }
 
-body ul {
-  list-style: none; }
-body .difficulty_level_selection {
+body .rooms__list .Magic_Imporium, body .rooms__list .The_Cure, body .rooms__list .Burlesque, body .rooms__list .The_Hospital, body .rooms__list .Abandoned_Factory, body .rooms__list .Bunker_51, body .rooms__list .The_Mystical_Room, body .rooms__list .Back_To_The_Future {
+  background-size: cover;
+  background-color: #222222;
+  background-blend-mode: overlay;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 25px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  align-content: center;
   flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 33px;
+  padding-bottom: 33px; }
+
+body {
   width: 100%; }
-  body .difficulty_level_selection button {
-    background-color: transparent;
-    background-color: transparent;
-    border: 1px solid #717171;
+  body ul {
+    list-style: none; }
+  body .difficulty_level_selection {
     display: flex;
     justify-content: center;
-    margin-bottom: -10px;
-    width: 100px;
-    text-align: center; }
-  body .difficulty_level_selection .red-button {
-    background-color: #f60b0e; }
-body .rooms__list .red {
-  color: #f60b0e; }
-body .rooms__list img {
-  max-width: 412px; }
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 100%; }
+    body .difficulty_level_selection button {
+      background-color: transparent;
+      background-color: transparent;
+      border: 1px solid #717171;
+      display: flex;
+      justify-content: center;
+      margin-bottom: -10px;
+      width: 100px;
+      text-align: center; }
+    body .difficulty_level_selection .red-button {
+      background-color: #f60b0e; }
+  body .rooms__list {
+    width: 100%; }
+    body .rooms__list .red {
+      color: #f60b0e; }
+    body .rooms__list .room-details {
+      display: flex;
+      flex-direction: row; }
+      body .rooms__list .room-details .players {
+        margin-right: 10px; }
+      body .rooms__list .room-details .time_required {
+        margin-right: 10px; }
+    body .rooms__list .Magic_Imporium {
+      background-image: url("../../../../resources/images/gallery/slide-2.jpg"); }
+    body .rooms__list .The_Cure {
+      background-image: url("../../../../resources/images/gallery/room-2.jpg"); }
+    body .rooms__list .Burlesque {
+      background-image: url("../../../../resources/images/gallery/room-3.jpg"); }
+    body .rooms__list .The_Hospital {
+      background-image: url("../../../../resources/images/gallery/room-5.jpg"); }
+    body .rooms__list .Abandoned_Factory {
+      background-image: url("../../../../resources/images/gallery/gallery-1.jpg"); }
+    body .rooms__list .Bunker_51 {
+      background-image: url("../../../../resources/images/gallery/room-7.jpg"); }
+    body .rooms__list .The_Mystical_Room {
+      background-image: url("../../../../resources/images/gallery/gallery-8.jpg"); }
+    body .rooms__list .Back_To_The_Future {
+      background-image: url("../../../../resources/images/gallery/room-9.jpg"); }
+  body .rooms_page_selection {
+    display: none; }
 
 footer .footer__general-informations .column1 .column1_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column4 .column4_title {
   display: flex;
@@ -928,7 +1019,6 @@ footer {
   color: #fefefe;
   background-image: url("../../../../resources/images/gallery/slide-3.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-blend-mode: overlay; }
   footer h4 {
     color: #717171;
@@ -1022,7 +1112,7 @@ footer {
       font-size: small;
       text-align: center; }
   @media screen and (max-width: 412px) {
-    footer .footer__general-informations {
+    footer footer .footer__general-informations {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -1030,11 +1120,52 @@ footer {
       align-content: flex-start;
       align-items: flex-start; } }
   @media screen and (min-width: 413px) and (max-width: 768px) {
+    footer footer {
+      min-width: 768px; }
+      footer footer .footer__general-informations {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: flex-start; }
+        footer footer .footer__general-informations h4 {
+          color: #717171;
+          font-size: 15px; }
+        footer footer .footer__general-informations h5 {
+          font-size: 20px; }
+        footer footer .footer__general-informations p {
+          color: #717171;
+          font-size: 15px; }
+        footer footer .footer__general-informations li {
+          color: #717171;
+          font-size: 15px; }
+        footer footer .footer__general-informations .column1 {
+          width: 20%; }
+        footer footer .footer__general-informations .column2 {
+          width: 20%; }
+        footer footer .footer__general-informations .column3 {
+          width: 20%; }
+          footer footer .footer__general-informations .column3 .column3_content ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px; }
+        footer footer .footer__general-informations .column4 {
+          width: 20%; } }
+
+@media screen and (min-width: 768px) {
+  footer {
+    min-width: 1920px; }
     footer .footer__general-informations {
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-around;
+      justify-content: center;
       align-content: center;
       align-items: flex-start; }
       footer .footer__general-informations h4 {
@@ -1049,63 +1180,28 @@ footer {
         color: #717171;
         font-size: 15px; }
       footer .footer__general-informations .column1 {
-        width: 20%; }
+        flex: 1 1 0;
+        width: 0; }
       footer .footer__general-informations .column2 {
-        width: 20%; }
+        flex: 1 1 0;
+        width: 0; }
       footer .footer__general-informations .column3 {
-        width: 20%; }
+        flex: 1 1 0;
+        width: 0; }
         footer .footer__general-informations .column3 .column3_content ul {
+          width: fit-content;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(7, 1fr);
           grid-column-gap: 0px;
           grid-row-gap: 0px; }
       footer .footer__general-informations .column4 {
-        width: 20%; } }
-
-@media screen and (min-width: 768px) {
-  .footer__general-informations {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-start; }
-    .footer__general-informations h4 {
-      color: #717171;
-      font-size: 15px; }
-    .footer__general-informations h5 {
-      font-size: 20px; }
-    .footer__general-informations p {
-      color: #717171;
-      font-size: 15px; }
-    .footer__general-informations li {
-      color: #717171;
-      font-size: 15px; }
-    .footer__general-informations .column1 {
-      flex: 1 1 0;
-      width: 0; }
-    .footer__general-informations .column2 {
-      flex: 1 1 0;
-      width: 0; }
-    .footer__general-informations .column3 {
-      flex: 1 1 0;
-      width: 0; }
-      .footer__general-informations .column3 .column3_content ul {
-        width: fit-content;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px; }
-    .footer__general-informations .column4 {
-      flex: 1 1 0;
-      width: 0; }
-      .footer__general-informations .column4 .column4_content ul {
-        width: 50%; } }
+        flex: 1 1 0;
+        width: 0; }
+        footer .footer__general-informations .column4 .column4_content ul {
+          width: 50%; }
+    footer .general_legal_mentions {
+      min-width: 1920px; } }
 footer, header {
   font-family: "Hind", sans-serif; }
 

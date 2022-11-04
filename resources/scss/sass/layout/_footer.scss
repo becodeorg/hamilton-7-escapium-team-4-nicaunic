@@ -28,7 +28,7 @@ footer {
     color: $white-background;
     background-image: url("../../../../resources/images/gallery/slide-3.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    //background-size: cover;
     background-blend-mode:overlay;
     h4 {
         color: $global-font-color;
@@ -154,13 +154,15 @@ footer {
 
 @media screen and (max-width: 412px) 
 { 
-    .footer__general-informations {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
+    footer {
+        .footer__general-informations {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+            }
     }
 }
 
@@ -168,11 +170,68 @@ footer {
 and (min-width: 413px) 
 and (max-width: 768px)
 { 
+    footer {
+        min-width: 768px;
+        .footer__general-informations {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-content:center;
+            align-items: flex-start;
+            h4 {
+                color: $global-font-color;
+                font-size: $p-font-size-value;
+            }
+            h5 {
+                font-size: 20px;
+            }
+            p {
+                color: $global-font-color;
+                font-size: $p-font-size-value;
+            }
+            li {
+                color: $global-font-color;
+                font-size: $button-value;
+            }
+            .column1 {
+                width: 20%;
+            }
+            .column2 {
+                width: 20%;
+            }
+            .column3 {
+                width: 20%;
+                .column3_content {
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(7, 1fr);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    }
+                }
+            }
+            .column4 {
+                width: 20%;
+                }
+            }
+    }
+        }
+    }
+
+@media screen 
+and (min-width: 768px)
+{ footer {
+        min-width: 1920px;
     .footer__general-informations {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content:center;
         align-content:center;
         align-items: flex-start;
         h4 {
@@ -191,15 +250,19 @@ and (max-width: 768px)
             font-size: $button-value;
         }
         .column1 {
-            width: 20%;
+            flex: 1 1 0;
+            width: 0;
         }
         .column2 {
-            width: 20%;
+            flex: 1 1 0;
+            width: 0;
         }
         .column3 {
-            width: 20%;
+            flex: 1 1 0;
+            width: 0;
             .column3_content {
             ul {
+                width: fit-content;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(7, 1fr);
@@ -209,69 +272,17 @@ and (max-width: 768px)
             }
         }
         .column4 {
-            width: 20%;
+            flex: 1 1 0;
+            width: 0;
+            .column4_content{
+                ul {
+                    width: 50%;
+                }
+            }
             }
         }
-        }
+    .general_legal_mentions {
+        min-width: 1920px;
     }
-
-@media screen 
-and (min-width: 768px)
-{.footer__general-informations {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-content:center;
-    align-items: flex-start;
-    h4 {
-        color: $global-font-color;
-        font-size: $p-font-size-value;
-    }
-    h5 {
-        font-size: 20px;
-    }
-    p {
-        color: $global-font-color;
-        font-size: $p-font-size-value;
-    }
-    li {
-        color: $global-font-color;
-        font-size: $button-value;
-    }
-    .column1 {
-        flex: 1 1 0;
-        width: 0;
-    }
-    .column2 {
-        flex: 1 1 0;
-        width: 0;
-    }
-    .column3 {
-        flex: 1 1 0;
-        width: 0;
-        .column3_content {
-        ul {
-            width: fit-content;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(7, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            }
-        }
-    }
-    .column4 {
-        flex: 1 1 0;
-        width: 0;
-        .column4_content{
-            ul {
-                width: 50%;
-            }
-        }
-        }
-    }
+}
 }

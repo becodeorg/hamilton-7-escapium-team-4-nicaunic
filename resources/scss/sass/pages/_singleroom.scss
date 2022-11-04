@@ -23,7 +23,25 @@ $nav-font-color: #777;
     }
 }
 
+%bg-parameters {
+    background-size: cover;
+    background-color: $dark-background;
+    background-blend-mode: overlay;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items:flex-start;
+    align-content: flex-start;
+    padding-left: 33px;
+    padding-bottom: 33px;
+}
+
 body {
+    width: 100%;
     @extend %noPadding;
     ul {
         list-style: none;
@@ -53,11 +71,54 @@ body {
         }
     }
     .rooms__list {
+        width: 100%;
         .red {
             color: #f60b0e;
         }
-        img {
-            max-width: 412px;
+        .room-details {
+            display: flex;
+            flex-direction: row;
+            .players {
+                margin-right: 10px;
+            }
+            .time_required {
+                margin-right: 10px;
+            }
         }
+        .Magic_Imporium {
+            background-image: url("../../../../resources/images/gallery/slide-2.jpg");
+            @extend %bg-parameters;
+        }
+        .The_Cure {
+            background-image: url("../../../../resources/images/gallery/room-2.jpg");
+            @extend %bg-parameters;
+        }
+        .Burlesque {
+            background-image: url("../../../../resources/images/gallery/room-3.jpg");
+            @extend %bg-parameters;
+        }
+        .The_Hospital {
+            background-image: url("../../../../resources/images/gallery/room-5.jpg");
+            @extend %bg-parameters;
+        }
+        .Abandoned_Factory {
+            background-image: url("../../../../resources/images/gallery/gallery-1.jpg");
+            @extend %bg-parameters;
+        }
+        .Bunker_51 {
+            background-image: url("../../../../resources/images/gallery/room-7.jpg");
+            @extend %bg-parameters;
+        }
+        .The_Mystical_Room {
+            background-image: url("../../../../resources/images/gallery/gallery-8.jpg");
+            @extend %bg-parameters;
+        }
+        .Back_To_The_Future {
+            background-image: url("../../../../resources/images/gallery/room-9.jpg");
+            @extend %bg-parameters;
+        }
+    }
+    .rooms_page_selection {
+        display: none;
     }
 }

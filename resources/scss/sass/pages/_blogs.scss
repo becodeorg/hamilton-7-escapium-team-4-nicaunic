@@ -189,4 +189,14 @@ body {
 }
 
 @media screen and (min-width: 769px) {
+    .main_section-recentPost {
+        li {
+            padding-bottom: 3%;
+        }
+
+        ul {
+            padding-bottom: 5%;
+            margin-left: 20px;
+        }
+    }
 }

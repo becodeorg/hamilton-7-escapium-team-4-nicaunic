@@ -209,19 +209,36 @@ h1, h2, h3 {
 
 p, a, pre, button, li {
   font-family: 'Hind', sans-serif;
-  color: #717171; }
+  color: #717171;
+  font-size: 14px; }
 
-@media screen and (max-width: 412px) {
-  p, a, pre {
-    font-size: 14px; }
+h1 {
+  font-size: 32px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 21px;
+  font-weight: bold; }
+
+h3 {
+  font-size: 19px;
+  font-weight: bold; }
+
+.section_p-littleText {
+  font-size: 10px; }
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 120px; }
 
   h2 {
-    font-size: 21px;
-    font-weight: bold; }
+    font-size: 44px; }
 
   h3 {
-    font-size: 19px;
-    font-weight: bold; }
+    font-size: 32px; }
+
+  p, a, pre, button, li {
+    font-size: 16px; }
 
   .section_p-littleText {
     font-size: 11px; } }
@@ -260,7 +277,9 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: flex-end; }
-    header .navbar p {
+    header .navbar img {
+      max-width: 11rem; }
+    header .navbar button {
       display: none; }
     header .navbar .fa-calendar {
       color: #fefefe;
@@ -278,9 +297,8 @@ header {
       flex-wrap: nowrap;
       justify-content: flex-end;
       align-items: flex-start;
-      align-content: flex-end; }
-  header p, header a, header pre {
-    font-size: 15px; }
+      align-content: flex-end;
+      font-size: 14px; }
   header h1 {
     font-size: 32px;
     padding-top: 75px;
@@ -297,32 +315,73 @@ header {
       header h1 p span {
         color: white; }
   header .directory-buttons {
-    margin-top: 5%;
+    margin-top: 2%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: flex-start;
-    font-size: 15px;
+    font-size: 10px;
     color: #717171; }
     header .directory-buttons a {
-      font-size: 15px;
+      font-size: 10px;
       color: #fefefe;
       text-decoration: none; }
 
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 120px !important; }
+
+  .navbar {
+    justify-content: flex-start !important; }
+
+  .navbar-buttons {
+    flex-direction: row-reverse !important;
+    width: 95%;
+    justify-content: space-between !important;
+    line-height: 40px; }
+    .navbar-buttons label {
+      display: none !important; }
+    .navbar-buttons ul {
+      display: flex !important;
+      flex-direction: row;
+      align-self: flex-start; }
+    .navbar-buttons li {
+      margin-left: 5%; }
+    .navbar-buttons .end {
+      justify-self: flex-end;
+      align-self: flex-end;
+      padding-right: 3%; }
+    .navbar-buttons .fa-calendar {
+      display: none; }
+    .navbar-buttons p {
+      display: inline; }
+    .navbar-buttons .main_button {
+      padding: 1px 30px;
+      margin: 0 0;
+      display: inline; }
+    .navbar-buttons .main_button:hover {
+      background-color: red;
+      border: none; }
+    .navbar-buttons i {
+      margin: 0 5px; }
+
+  header .directory-buttons {
+    padding-bottom: 90px; } }
 body {
   background-color: #1B1B1B; }
 
-header {
-  background-image: url("../images/gallery/slide-1.jpg"); }
+.blogs_header {
+  background-image: url("../../../../resources/images/gallery/slide-1.jpg"); }
 
-hr {
+.section_hr {
   border-bottom: 3px solid #3D3D3D;
   width: 10%;
-  margin: 20px 10px 20px 20px; }
+  margin: 10px 10px 30px 20px; }
 
-h3 {
+.section_h3 {
   margin-left: 20px; }
 
 .main_button {
@@ -332,11 +391,11 @@ h3 {
   border: 2px solid #3D3D3D;
   color: white;
   font-weight: bold;
-  margin: 30px 0 30px 10px;
+  margin: 30px 0 30px 30px;
   padding: 15px 35px; }
 
 .main_section-blogArticle {
-  width: 95%;
+  width: 90%;
   background-color: #222222;
   margin: 50px auto;
   padding-bottom: 15px; }
@@ -344,7 +403,8 @@ h3 {
     width: 100%;
     margin-bottom: 10px; }
   .main_section-blogArticle h2 {
-    padding: 25px 0 10px 10px; }
+    padding: 0px 0 10px 10px;
+    margin-left: 30px; }
   .main_section-blogArticle p, .main_section-blogArticle a {
     padding-left: 10px; }
   .main_section-blogArticle i {
@@ -361,7 +421,7 @@ h3 {
     margin-left: 10px; }
 
 .section_p-info {
-  padding: 10px 0 40px 10px;
+  padding: 10px 0 10px 10px;
   font-weight: bold; }
 
 .main_div-redButton {
@@ -372,7 +432,8 @@ h3 {
   border-radius: 50%;
   background-color: #1B1B1B;
   border: 2px solid #3D3D3D;
-  color: white; }
+  color: white;
+  width: 50px; }
 
 .main_button-red:hover {
   background-color: red;
@@ -388,14 +449,13 @@ h3 {
   .section_nav-margin li {
     margin-bottom: 20px; }
 
-.main_section-recentPost li {
-  margin-left: 20px;
-  margin-bottom: 75px; }
-.main_section-recentPost span {
-  color: white;
-  font-weight: bold; }
-.main_section-recentPost ul {
-  padding-top: 40px; }
+.main_section-recentPost {
+  font-size: 14px li;
+    font-size-margin-left: 20px;
+    font-size-margin-bottom: 75px; }
+  .main_section-recentPost span {
+    color: white;
+    font-weight: bold; }
 
 .ul_hr-separator {
   margin: 0;
@@ -439,9 +499,14 @@ h3 {
   .main_section-archive li {
     color: #717171;
     margin-bottom: 20px; }
-  .main_section-archive hr {
-    margin-bottom: 50px; }
 
+@media screen and (min-width: 413px) {
+  main {
+    display: grid;
+    grid-template-columns: 60% 40%; }
+
+  .div_section-categories {
+    margin-top: 50px; } }
 main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center, body .difficulty_level_selection button {
   background-color: red;
   color: white;
@@ -1211,19 +1276,36 @@ h1, h2, h3 {
 
 p, a, pre, button, li {
   font-family: 'Hind', sans-serif;
-  color: #717171; }
+  color: #717171;
+  font-size: 14px; }
 
-@media screen and (max-width: 412px) {
-  p, a, pre {
-    font-size: 14px; }
+h1 {
+  font-size: 32px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 21px;
+  font-weight: bold; }
+
+h3 {
+  font-size: 19px;
+  font-weight: bold; }
+
+.section_p-littleText {
+  font-size: 10px; }
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 120px; }
 
   h2 {
-    font-size: 21px;
-    font-weight: bold; }
+    font-size: 44px; }
 
   h3 {
-    font-size: 19px;
-    font-weight: bold; }
+    font-size: 32px; }
+
+  p, a, pre, button, li {
+    font-size: 16px; }
 
   .section_p-littleText {
     font-size: 11px; } }
@@ -1262,7 +1344,9 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: flex-end; }
-    header .navbar p {
+    header .navbar img {
+      max-width: 11rem; }
+    header .navbar button {
       display: none; }
     header .navbar .fa-calendar {
       color: #fefefe;
@@ -1280,9 +1364,8 @@ header {
       flex-wrap: nowrap;
       justify-content: flex-end;
       align-items: flex-start;
-      align-content: flex-end; }
-  header p, header a, header pre {
-    font-size: 15px; }
+      align-content: flex-end;
+      font-size: 14px; }
   header h1 {
     font-size: 32px;
     padding-top: 75px;
@@ -1299,32 +1382,73 @@ header {
       header h1 p span {
         color: white; }
   header .directory-buttons {
-    margin-top: 5%;
+    margin-top: 2%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: flex-start;
-    font-size: 15px;
+    font-size: 10px;
     color: #717171; }
     header .directory-buttons a {
-      font-size: 15px;
+      font-size: 10px;
       color: #fefefe;
       text-decoration: none; }
 
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 120px !important; }
+
+  .navbar {
+    justify-content: flex-start !important; }
+
+  .navbar-buttons {
+    flex-direction: row-reverse !important;
+    width: 95%;
+    justify-content: space-between !important;
+    line-height: 40px; }
+    .navbar-buttons label {
+      display: none !important; }
+    .navbar-buttons ul {
+      display: flex !important;
+      flex-direction: row;
+      align-self: flex-start; }
+    .navbar-buttons li {
+      margin-left: 5%; }
+    .navbar-buttons .end {
+      justify-self: flex-end;
+      align-self: flex-end;
+      padding-right: 3%; }
+    .navbar-buttons .fa-calendar {
+      display: none; }
+    .navbar-buttons p {
+      display: inline; }
+    .navbar-buttons .main_button {
+      padding: 1px 30px;
+      margin: 0 0;
+      display: inline; }
+    .navbar-buttons .main_button:hover {
+      background-color: red;
+      border: none; }
+    .navbar-buttons i {
+      margin: 0 5px; }
+
+  header .directory-buttons {
+    padding-bottom: 90px; } }
 body {
   background-color: #1B1B1B; }
 
-header {
-  background-image: url("../images/gallery/slide-1.jpg"); }
+.blogs_header {
+  background-image: url("../../../../resources/images/gallery/slide-1.jpg"); }
 
-hr {
+.section_hr {
   border-bottom: 3px solid #3D3D3D;
   width: 10%;
-  margin: 20px 10px 20px 20px; }
+  margin: 10px 10px 30px 20px; }
 
-h3 {
+.section_h3 {
   margin-left: 20px; }
 
 .main_button {
@@ -1334,11 +1458,11 @@ h3 {
   border: 2px solid #3D3D3D;
   color: white;
   font-weight: bold;
-  margin: 30px 0 30px 10px;
+  margin: 30px 0 30px 30px;
   padding: 15px 35px; }
 
 .main_section-blogArticle {
-  width: 95%;
+  width: 90%;
   background-color: #222222;
   margin: 50px auto;
   padding-bottom: 15px; }
@@ -1346,7 +1470,8 @@ h3 {
     width: 100%;
     margin-bottom: 10px; }
   .main_section-blogArticle h2 {
-    padding: 25px 0 10px 10px; }
+    padding: 0px 0 10px 10px;
+    margin-left: 30px; }
   .main_section-blogArticle p, .main_section-blogArticle a {
     padding-left: 10px; }
   .main_section-blogArticle i {
@@ -1363,7 +1488,7 @@ h3 {
     margin-left: 10px; }
 
 .section_p-info {
-  padding: 10px 0 40px 10px;
+  padding: 10px 0 10px 10px;
   font-weight: bold; }
 
 .main_div-redButton {
@@ -1374,7 +1499,8 @@ h3 {
   border-radius: 50%;
   background-color: #1B1B1B;
   border: 2px solid #3D3D3D;
-  color: white; }
+  color: white;
+  width: 50px; }
 
 .main_button-red:hover {
   background-color: red;
@@ -1390,14 +1516,13 @@ h3 {
   .section_nav-margin li {
     margin-bottom: 20px; }
 
-.main_section-recentPost li {
-  margin-left: 20px;
-  margin-bottom: 75px; }
-.main_section-recentPost span {
-  color: white;
-  font-weight: bold; }
-.main_section-recentPost ul {
-  padding-top: 40px; }
+.main_section-recentPost {
+  font-size: 14px li;
+    font-size-margin-left: 20px;
+    font-size-margin-bottom: 75px; }
+  .main_section-recentPost span {
+    color: white;
+    font-weight: bold; }
 
 .ul_hr-separator {
   margin: 0;
@@ -1441,7 +1566,13 @@ h3 {
   .main_section-archive li {
     color: #717171;
     margin-bottom: 20px; }
-  .main_section-archive hr {
-    margin-bottom: 50px; }
+
+@media screen and (min-width: 413px) {
+  main {
+    display: grid;
+    grid-template-columns: 60% 40%; }
+
+  .div_section-categories {
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

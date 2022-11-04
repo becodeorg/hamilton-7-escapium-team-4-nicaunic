@@ -38,7 +38,7 @@ HTML, CSS & SASS.
 ## **What was the hardest part ?**
 * **Lauranne Nicolas:** Manage the conflicts and working in other's codes
 * **Nicolas Bussière:** Sass of the header part
-* **Aurélie Van Hellemont:** The structure of BEM classes with Sass, the responsive, and Git problems
+* **Aurélie Van Hellemont:** The structure of BEM classes with Sass, the responsive, and Git problems. That's why I did everything on my own branch, this way I could still work and learn from the exercise. With more time we might have solve this but since it's not possible I have to return my work in this state.
 
 **P.S.:** We did not finish this project. Also, we made a mock-up for each page in paper format, it hasn't been inclued in our files but we thought it was interesting to mention it. 
 

@@ -480,16 +480,6 @@ footer .general_legal_mentions p, footer .general_legal_mentions .p--left {
     width: 50%;
   }
 }
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  text-align: center;
-  max-width: 412px;
-  border: 0;
-  list-style: none;
-}
-
 .section__background--dark {
   background-color: #222222;
   padding-top: 5px;
@@ -545,7 +535,7 @@ footer .general_legal_mentions p, footer .general_legal_mentions .p--left {
   margin-right: 10px;
 }
 
-p, .p--left {
+main p, main .p--left {
   font-family: "Hind", sans-serif;
   font-size: 14px;
   margin-top: 10px;
@@ -554,7 +544,7 @@ p, .p--left {
   margin-right: 30px;
   color: #717171;
 }
-p a, .p--left a {
+main p a, main .p--left a {
   color: #f60b0e;
 }
 

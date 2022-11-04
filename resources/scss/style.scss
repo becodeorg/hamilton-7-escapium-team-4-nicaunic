@@ -1,4 +1,3 @@
-@import "./sass/layout/footer", "./sass/sass-utils/variables",
-  "./sass/base/typography", "./sass/layout/header", "./sass/pages/blogs",
-  "./sass/pages/homepage";
-@import "./sass/pages/homepage", "./sass/layout/footer", "./sass/sass-utils/variables", "./sass/base/typography", "./sass/layout/header", "./sass/pages/blogs";
+@import "./sass/sass-utils/variables", "./sass/base/typography",
+  "./sass/layout/header", "./sass/layout/footer", "./sass/pages/homepage",
+  "./sass/pages/blogs", "./sass/layout/footer";

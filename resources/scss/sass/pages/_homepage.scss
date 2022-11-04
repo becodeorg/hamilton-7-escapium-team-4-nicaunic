@@ -14,12 +14,32 @@ $nav-font-color: #777;
   border: 0;
   list-style: none;
 }
-
+//header
+header {
+  background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
+    url(/resources/images/gallery/slide-4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header__h1 {
+  @extend .main__h2--center;
+  margin: 0;
+}
 //Background
 .section__background--dark {
   background-color: #222222;
   padding-top: 5px;
   padding-bottom: 20px;
+}
+.feature__background--dark {
+  background-color: #222222;
+  margin: 20px;
+  padding-bottom: 5px;
+}
+.section__background--darkest {
+  @extend .section__background--dark;
+  background-color: #1b1b1b;
+  padding-top: none;
 }
 
 //HR
@@ -49,6 +69,11 @@ $nav-font-color: #777;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
   margin-top: 30px;
+}
+.main__button--right {
+  @extend .main__button--red;
+  display: flex;
+  margin: 20px;
 }
 
 .main__button--border {
@@ -114,7 +139,7 @@ p {
   @extend .main__h2--center;
   font-size: 19px;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .main__h3--center {
   @extend .main__h3--left;
@@ -261,4 +286,37 @@ textarea {
 }
 .fa-heart-pulse {
   @extend .fa-lock;
+}
+
+//FeaturedRooms
+.articleFeature__img {
+  width: 100%;
+}
+.feature__p--lock {
+  margin: 20px;
+  display: flex;
+}
+
+.feature--lock {
+  color: #717171;
+  font-size: 14px;
+  margin: 3px;
+}
+.feature--lock:hover {
+  color: red;
+}
+
+.feature--icon {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  margin: 3px;
+}
+.feature__p--info {
+  color: #717171;
+  margin: 20px;
+  font-weight: 700;
+}
+.feature__div--info {
+  display: flex;
 }

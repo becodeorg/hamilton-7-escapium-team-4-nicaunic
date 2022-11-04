@@ -1,36 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head><header class="blogs_header">     
-            <!-- Nav Bar -->
-            <div class="header_div-navbar">
-                <div class="first-div">
-                    <img src="./resources/images/logo/logo.png" alt="Escapium logo" class="header_img">
-                
-                    <nav class="header_nav">
-                            <ul class="hamburger-menu">
-                                <li><a href="./index.html">home</a></li>
-                                <li><a href="./about.html">about</a></li>
-                                <li><a href="#">features</a></li>
-                                <li><a href="./rooms.html">rooms</a></li>
-                                <li><a href="#">booking</a></li>
-                                <li><a href="./blogs.html">blog</a></li>
-                                <li><a href="./contact.html">contacts</a></li>
-                            </ul>
-                    </nav>
-                </div>
-                <div class="last_div">
-                    <button class="header_button">Book Now!</button>
-                    <i class="fa-regular fa-calendar header_i-calendar"></i>
-                    <p><i class="fa-solid fa-magnifying-glass"></i> | <i class="fa-regular fa-user header_i-user"></i>SIGN IN</p>
-                </div>
-            </div>
-            <!-- Title -->
-            <div class="header_div-title">
-                <h1 class="header_h1">blog<span>.</span></h1>
-                <pre class="header_p"><span>ESCAPUM</span>    >   BLOG</pre>
-            </div>
-        </header>
+    <head>
         <title>Blogs</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +9,32 @@
         <link rel="stylesheet" href="./resources/css/style.css">
     </head>
     <body>
-        
-
+        <header class="blogs_header">
+            <div class="navbar">
+              <img src="./resources/images/logo/logo.png" alt="Escapium logo">
+              <div class="navbar-buttons">
+                <a href=""><i class="fa-solid fa-calendar"></i><p>Book Now !</p></a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <nav id="hamnav">
+                  <label for="hamburger">&#9776;</label>
+                  <input type="checkbox" id="hamburger"/>
+                    <ul id="hamitems">
+                      <li><a href="./index.html">home</a></li>
+                      <li><a href="./about.html">about</a></li>
+                      <li><a href="">features</a></li>
+                      <li><a href="./rooms.html">rooms</a></li>
+                      <li><a href="">booking</a></li>
+                      <li><a href="./blogs.html">blog</a></li>
+                      <li><a href="./contact.html">contacts</a></li>
+                    </ul>
+                </nav>
+              </div>
+            </div>
+              <h1>Blog<span>.</span></h1>
+                <div class="directory-buttons section_p-littleText">
+                    <div class="home-return-button"><a href="./index.html">HOME</a></div>><div class="current-location-folder">BLOG</div>
+                </div>
+            </header>
         <main>
             <!-- Kidnapped Game -->
             <div class="main_div-articleBlog">

@@ -6,7 +6,7 @@ $global-font-color:#717171 ;
 $nav-font-color: #777;
 
 $button-value: 15px;
-$p-font-size-value: 15px;
+$p-font-size-value: 10px;
 $h-font-size-value: 25px;
 
 %Hind {
@@ -50,6 +50,9 @@ header {
         justify-content: space-between;
         align-items: center;
         align-content: flex-end;
+        img {
+            max-width: 10rem;
+        }
         p {
             display: none;
         }
@@ -100,6 +103,7 @@ header {
     }
     .directory-buttons {
         margin-top: 5%;
+        padding-bottom: 10%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -108,10 +112,15 @@ header {
         align-content: flex-start;
         font-size: $p-font-size-value;
         color: #717171;
+        
         a {
         font-size: $p-font-size-value;
         color: $white-background;
         text-decoration: none;
         }
     }
+}
+
+@media only screen and (min-width: 413px) {
+
 }

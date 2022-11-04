@@ -103,7 +103,7 @@ body {
 }
 
 .main_section-recentPost {
-
+    font-size: $global-font-size
     li {
         margin-left: 20px;
         margin-bottom: 75px;
@@ -189,5 +189,4 @@ body {
 }
 
 @media screen and (min-width: 769px) {
-    
 }

@@ -170,9 +170,9 @@ header .navbar {
   align-content: flex-end;
 }
 header .navbar img {
-  max-width: 10rem;
+  max-width: 11rem;
 }
-header .navbar p, header .navbar .p--left {
+header .navbar button {
   display: none;
 }
 header .navbar .fa-calendar {
@@ -194,9 +194,7 @@ header .navbar .navbar-buttons {
   justify-content: flex-end;
   align-items: flex-start;
   align-content: flex-end;
-}
-header p, header .p--left, header a, header pre {
-  font-size: 10px;
+  font-size: 14px;
 }
 header h1 {
   font-size: 32px;
@@ -218,7 +216,7 @@ header h1 p span, header h1 .p--left span {
   color: white;
 }
 header .directory-buttons {
-  margin-top: 5%;
+  margin-top: 2%;
   padding-bottom: 10%;
   display: flex;
   flex-direction: row;
@@ -235,6 +233,57 @@ header .directory-buttons a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 120px !important;
+  }
+  .navbar {
+    justify-content: flex-start !important;
+  }
+  .navbar-buttons {
+    flex-direction: row-reverse !important;
+    width: 95%;
+    justify-content: space-between !important;
+    line-height: 40px;
+  }
+  .navbar-buttons label {
+    display: none !important;
+  }
+  .navbar-buttons ul {
+    display: flex !important;
+    flex-direction: row;
+    align-self: flex-start;
+  }
+  .navbar-buttons li {
+    margin-left: 5%;
+  }
+  .navbar-buttons .end {
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding-right: 3%;
+  }
+  .navbar-buttons .fa-calendar {
+    display: none;
+  }
+  .navbar-buttons p, .navbar-buttons .p--left {
+    display: inline;
+  }
+  .navbar-buttons .main_button {
+    padding: 1px 30px;
+    margin: 0 0;
+    display: inline;
+  }
+  .navbar-buttons .main_button:hover {
+    background-color: red;
+    border: none;
+  }
+  .navbar-buttons i {
+    margin: 0 5px;
+  }
+  header .directory-buttons {
+    padding-bottom: 90px;
+  }
+}
 footer .footer__general-informations .column4 .column4_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column1 .column1_title {
   display: flex;
   flex-direction: row;
@@ -811,9 +860,10 @@ body {
   margin-bottom: 20px;
 }
 
-.main_section-recentPost li {
-  margin-left: 20px;
-  margin-bottom: 75px;
+.main_section-recentPost {
+  font-size: 14px li;
+  font-size-margin-left: 20px;
+  font-size-margin-bottom: 75px;
 }
 .main_section-recentPost span {
   color: white;

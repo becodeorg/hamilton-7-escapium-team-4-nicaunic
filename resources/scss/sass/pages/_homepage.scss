@@ -276,17 +276,12 @@ textarea {
 }
 
 //Howitwork
-.fa-lock {
+.howitwork__i {
   color: white;
   font-size: 40px;
   margin: 30px;
 }
-.fa-clock {
-  @extend .fa-lock;
-}
-.fa-heart-pulse {
-  @extend .fa-lock;
-}
+
 
 //FeaturedRooms
 .articleFeature__img {

@@ -1,0 +1,47 @@
+$color-red: #f60b0e;
+$darkest-background: #1b1b1b;
+$dark-background: #222222;
+$white-background: #fefefe;
+$global-font-color: #717171;
+$nav-font-color: #777;
+//reset
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  text-align: center;
+  max-width: 412px;
+  border: 0;
+  list-style: none;
+}
+//Background
+.section__background--dark {
+    background-color: #222222;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+//HR
+.main__hr {
+    text-align: center;
+    width: 35px;
+    height: 4px;
+    background-color: #717171;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 45px;}
+//Titre
+.main__h2--center {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  
+//Howitwork
+.howitwork__i {
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+  }

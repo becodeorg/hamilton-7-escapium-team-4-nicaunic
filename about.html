@@ -8,39 +8,44 @@
       src="https://kit.fontawesome.com/5de72bfe03.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./resources/css/style.css">
     <title>Document</title>
   </head>
   <body>
-    <header>
-        
-        <!-- Nav Bar -->
-        <img src="./resources/images/logo/logo.png" alt="Escapium logo">
-      <nav>  
-<ul>
-            <li><a href="./index.html">home</a></li>
-            <li><a href="./about.html">about</a></li>
-            <li><a href="">features</a></li>
-            <li><a href="./rooms.html">rooms</a></li>
-            <li><a href="">booking</a></li>
-            <li><a href="./blogs.html">blog</a></li>
-            <li><a href="./contact.html">contacts</a></li>
-        </ul>
+    <header>     
+      <!-- Nav Bar -->
+      <div class="header_div-navbar">
+          <img src="./resources/images/logo/logo.png" alt="Escapium logo" class="header_img">
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <nav class="header_nav">
+              <div class="hamburger_div">
+                  <input type="checkbox" id="hamburger"/>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul class="hamburger-menu">
+                      <li><a href="./index.html">home</a></li>
+                      <li><a href="./about.html">about</a></li>
+                      <li><a href="#">features</a></li>
+                      <li><a href="./rooms.html">rooms</a></li>
+                      <li><a href="#">booking</a></li>
+                      <li><a href="./blogs.html">blog</a></li>
+                      <li><a href="./contact.html">contacts</a></li>
+                  </ul>
+              </div>
           </nav>
-<p><a href="">Book Now !</a><i class="fa-regular fa-magnifying-glass"></i> | <i class="fa-light fa-user"></i> SIGN IN</p>
-       
-        <!-- Title -->
-        <h1>Blog<span>.</span></h1>
-        <p>HOME - BLOG</p>
-
-    </header> 
+      </div>
+      <!-- Title -->
+      <div class="header_div-title">
+          <h1 class="header_h1">about<span class="header_span--dot">.</span></h1>
+          <pre class="header_p"><span>ESCAPUM</span>    >   ABOUT</pre>
+      </div>
+  </header>
 
     <main>
-      <!--Hero-->
-      <h1>about.</h1>
-      <a href="#">ESCAPIUM > ABOUT</a>
-
       <!--Howtoplay-->
-      <section class="section__background--dark">
+      <section class="section__background--darkest">
         <hr class="main__hr">
         <h2 class="main__h2--center">How to play</h2>
 
@@ -77,35 +82,27 @@
           </p>
         </article>
         <!--Intrégration de la vidéo-->
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <img class="howtoplay__img--video" src="./resources/images/gallery/video-placeholder.jpg" alt="">
       </section>
 
       <!--Certificates-->
-      <section>
-        <hr />
-        <h2>Certificates</h2>
+      <section class="section__background--darkest">
+        <hr class="main__hr">
+        <h2 class="main__h2--center">Certificates</h2>
         <article>
-          <img
+          <img class="certificate__img"
             src="./resources/images/gallery/certificate-1.jpg"
             alt="Photo of certificate"
           />
-          <img
+          <img class="certificate__img"
             src="./resources/images/gallery/certificate-2.jpg"
             alt="Photo of certificate"
           />
-          <img
+          <img class="certificate__img"
             src="./resources/images/gallery/certificate-3.jpg"
             alt="Photo of certificate"
           />
-          <img
+          <img class="certificate__img"
             src="./resources/images/gallery/certificate-4.jpg"
             alt="Photo of certificate"
           />
@@ -113,49 +110,53 @@
       </section>
 
       <!--OurTeam-->
-      <section>
-        <hr />
-        <h2>Our Team</h2>
+      <section class="section__background--dark">
+        <hr class="main__hr">
+        <h2 class="main__h2--center">Our Team</h2>
 
         <!--PremierArt-->
         <article>
-          <img src="./resources/images/gallery/member-photo-1.jpg" alt="Photo of Stanley Hudson" />
-          <h3>Stanley Hudson</h3>
-          <p>Co-Creator</p>
+          <img class="team__img" src="./resources/images/gallery/member-photo-1.jpg" alt="Photo of Stanley Hudson" />
+          <h3 class="main__h3--center">Stanley Hudson</h3>
+          <p class="team__p">Co-Creator</p>
         </article>
 
         <!--DeuxièmeArt-->
         <article>
-          <img src="./resources/images/gallery/member-photo-2.jpg" alt="Photo of Mona Sterling" />
-          <h3>Mona Sterling</h3>
-          <p>Co-Creator</p>
+          <img class="team__img" src="./resources/images/gallery/member-photo-2.jpg" alt="Photo of Mona Sterling" />
+          <h3 class="main__h3--center">Mona Sterling</h3>
+          <p class="team__p">Co-Creator</p>
         </article>
 
         <!--TroisièmeArt-->
         <article>
-          <img src="./resources/images/gallery/member-photo-3.jpg" alt="Photo of Trudy Camp" />
-          <h3>Trudy 
+          <img class="team__img" src="./resources/images/gallery/member-photo-3.jpg" alt="Photo of Trudy Camp" />
+          <h3 class="main__h3--center">Trudy 
             Campbell</h3>
-          <p>Co-Creator</p>
+          <p class="team__p">Co-Creator</p>
         </article>
       </section>
 
       <!--WhatPeopleSay-->
-      <section>
-        <hr />
-        <h2>What People Say</h2>
-        <a href="#">Read All Testiomials</a>
+      <section class="section__background--darkest">
+        <hr class="main__hr">
+        <h2 class="main__h2--center">What People Say</h2>
+        <a class="main__a-tag" href="#">Read All Testiomials</a>
+        
         <!--Avis Tiffany-->
         <article>
           <p>
             "This place is a blast, especially for groups! I loved seeing how
             group members of different personalities approached the puzzles."
           </p>
-          <img
-          src="./resources/images/avatars/comment-avatar-2.png"
-          alt="Avatar"
-        />
-          <span>TIFFANY</span>
+          <div class="peoplesay__div--avatar">
+            <img class="peoplesay__img"
+              src="./resources/images/avatars/comment-avatar-2.png"
+              alt="Avatar"
+            />
+            
+            <span class="peoplesay__span">TIFFANY</span>
+          </div>
         </article>
 
         <!--Avis Aaron-->
@@ -164,28 +165,31 @@
             "My family and I had a spectacular experience here and they are
             above and beyond in customer service and entertainment."
           </p>
-          <img
-          src="./resources/images/avatars/comment-avatar-1.png"
-          alt="Avatar"
-        />
-          <span>Aaron</span>
+          <div class="peoplesay__div--avatar">
+            <img class="peoplesay__img"
+              src="./resources/images/avatars/comment-avatar-1.png"
+              alt="Avatar"
+            />
+            <span class="peoplesay__span">AARON</span>
+          </div>
         </article>
       </section>
 
       <!--FAQS-->
       <section>
-        <hr />
-        <p>If your question isn't answered here, feel free to contact us.</p>
-        <h2>FAQs</h2>
+        <hr class="main__hr">
+        <h2 class="homepage__h2--black">FAQs</h2>
+        <p class="FAQS__p">If your question isn't answered here, feel free to contact us.</p>
+        
 
         <ul>
-          <li><button>+</button> What is an Escape Room?</li>
-          <li><button>+</button> Will I be locked in a room?</li>
-          <li><button>+</button> How long does the whole experience take?</li>
-          <li><button>+</button> Can I play more than one game?</li>
-          <li><button>+</button> Will other people be in the room with us?</li>
-          <li><button>+</button> Do I need to bring anything?</li>
-          <li><button>+</button> Is there an age limit?</li>
+          <li class="FAQS--text"><button class="button--border"><span class="FAQs__span--plus">+</span></button><h3 class="FAQS--text">What is an Escape Room?</h3> </li>
+          <li class="FAQS--text"><button class="button--border"><span class="FAQs__span--plus">+</span></button><h3 class="FAQS--text">Will I be locked in a room?</h3> </li>
+          <li class="FAQS--text"><button class="button--border"><span class="FAQs__span--plus">+</span></button><h3 class="FAQS--text">How long does the whole experience take?</h3> </li>
+          <li class="FAQS--text"><button class="button--border"><span class="FAQs__span--plus">+</span></button><h3 class="FAQS--text">Can I play more than one game?</h3> </li>
+          <li class="FAQS--text"><button class="button--border"><span class="FAQs__span--plus">+</span></button><h3 class="FAQS--text">Will other people be in the room with us?</h3> </li>
+          <li class="FAQS--text"><button class="button--border"><span class="FAQs__span--plus">+</span></button><h3 class="FAQS--text">Do I need to bring anything?</h3> </li>
+          <li class="FAQS--text"><button class="button--border"><span class="FAQs__span--plus">+</span></button><h3 class="FAQS--text">Is there an age limit?</h3> </li>
         </ul>
       </section>
     </main>

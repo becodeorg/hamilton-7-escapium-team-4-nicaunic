@@ -1,0 +1,63 @@
+$color-red: #f60b0e;
+$darkest-background: #1b1b1b;
+$dark-background: #222222;
+$white-background: #fefefe;
+$global-font-color: #717171;
+$nav-font-color: #777;
+
+%buttons {
+    background-color: red;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+%noPadding {
+    ul {
+        padding-left: 0px;
+    }
+}
+
+body {
+    @extend %noPadding;
+    ul {
+        list-style: none;
+    }
+    .difficulty_level_selection {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        button {
+            @extend %buttons;
+            background-color: transparent;
+            background-color: transparent;
+            border: 1px solid #717171;
+            display: flex;
+            justify-content: center;
+            margin-bottom: -10px;
+            width: 100px;
+            text-align: center;
+        }
+        .red-button {
+            background-color: #f60b0e;
+        }
+    }
+    .rooms__list {
+        .red {
+            color: #f60b0e;
+        }
+        img {
+            max-width: 412px;
+        }
+    }
+}

@@ -9,7 +9,7 @@ footer .footer__general-informations .column1 .column1_title, footer .footer__ge
   justify-content: flex-start;
   align-items: flex-start; }
 
-footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul {
+footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul, body ul {
   padding-left: 0px; }
 
 footer {
@@ -437,7 +437,7 @@ h3 {
   .main_section-archive hr {
     margin-bottom: 50px; }
 
-main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center {
+main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center, body .difficulty_level_selection button {
   background-color: red;
   color: white;
   padding: 15px 30px 15px 30px;
@@ -634,7 +634,7 @@ main .fa-lock, main .fa-clock, main .fa-heart-pulse {
   font-size: 40px;
   margin: 30px; }
 
-main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center {
+main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center, body .difficulty_level_selection button {
   background-color: red;
   color: white;
   padding: 15px 30px 15px 30px;
@@ -830,6 +830,88 @@ main .fa-lock, main .fa-clock, main .fa-heart-pulse {
   color: white;
   font-size: 40px;
   margin: 30px; }
+
+main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center, body .difficulty_level_selection button {
+  background-color: red;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 30px; }
+
+footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul, body ul {
+  padding-left: 0px; }
+
+body ul {
+  list-style: none; }
+body .difficulty_level_selection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 100%; }
+  body .difficulty_level_selection button {
+    background-color: transparent;
+    background-color: transparent;
+    border: 1px solid #717171;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    width: 100px;
+    text-align: center; }
+  body .difficulty_level_selection .red-button {
+    background-color: #f60b0e; }
+body .rooms__list .red {
+  color: #f60b0e; }
+body .rooms__list img {
+  max-width: 412px; }
+
+main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center, body .difficulty_level_selection button {
+  background-color: red;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 30px; }
+
+footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul, body ul {
+  padding-left: 0px; }
+
+body ul {
+  list-style: none; }
+body .difficulty_level_selection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 100%; }
+  body .difficulty_level_selection button {
+    background-color: transparent;
+    background-color: transparent;
+    border: 1px solid #717171;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    width: 100px;
+    text-align: center; }
+  body .difficulty_level_selection .red-button {
+    background-color: #f60b0e; }
+body .rooms__list .red {
+  color: #f60b0e; }
+body .rooms__list img {
+  max-width: 412px; }
 
 footer .footer__general-informations .column1 .column1_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column4 .column4_title {
   display: flex;
@@ -838,7 +920,7 @@ footer .footer__general-informations .column1 .column1_title, footer .footer__ge
   justify-content: flex-start;
   align-items: flex-start; }
 
-footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul {
+footer .footer__general-informations .column2 ul, footer .footer__general-informations .column3 .column3_content ul, footer .footer__general-informations .column4 .column4_content ul, body ul {
   padding-left: 0px; }
 
 footer {

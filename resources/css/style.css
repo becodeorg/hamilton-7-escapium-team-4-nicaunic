@@ -616,6 +616,7 @@ main .p--small--left {
   margin: 30px; }
 main .testmonials__span {
   color: #717171;
+  display: flex;
   justify-content: center;
   margin: 20px; }
 main .testimonials__div--avatar {
@@ -809,6 +810,7 @@ main .p--small--left {
   margin: 30px; }
 main .testmonials__span {
   color: #717171;
+  display: flex;
   justify-content: center;
   margin: 20px; }
 main .testimonials__div--avatar {

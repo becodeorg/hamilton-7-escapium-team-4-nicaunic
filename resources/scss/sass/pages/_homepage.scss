@@ -261,6 +261,7 @@ main {
   .testmonials__span {
     @extend .span--avatar;
     color: #717171;
+    display: flex;
     justify-content: center;
     margin: 20px;
   }

@@ -437,7 +437,7 @@ h3 {
   .main_section-archive hr {
     margin-bottom: 50px; }
 
-main .main__button--red, main .main__button--border, main .button__border--center {
+main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center {
   background-color: red;
   color: white;
   padding: 15px 30px 15px 30px;
@@ -501,6 +501,9 @@ main .main__button--red {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  border-color: none;
+  border-style: none; }
+main .main__button--right {
   border-color: none;
   border-style: none; }
 main .main__button--border {
@@ -631,7 +634,7 @@ main .fa-lock, main .fa-clock, main .fa-heart-pulse {
   font-size: 40px;
   margin: 30px; }
 
-main .main__button--red, main .main__button--border, main .button__border--center {
+main .main__button--red, main .main__button--right, main .main__button--border, main .button__border--center {
   background-color: red;
   color: white;
   padding: 15px 30px 15px 30px;
@@ -695,6 +698,9 @@ main .main__button--red {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  border-color: none;
+  border-style: none; }
+main .main__button--right {
   border-color: none;
   border-style: none; }
 main .main__button--border {

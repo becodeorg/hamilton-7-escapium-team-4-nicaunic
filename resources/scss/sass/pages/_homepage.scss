@@ -93,6 +93,11 @@ main {
     border-color: none;
     border-style: none;
   }
+  .main__button--right {
+    @extend%buttons;
+    border-color: none;
+    border-style: none;
+  }
   .main__button--border {
     @extend %buttons;
     background-color: transparent;

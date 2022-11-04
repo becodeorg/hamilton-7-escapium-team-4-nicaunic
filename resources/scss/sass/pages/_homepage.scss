@@ -4,53 +4,8 @@ $dark-background: #222222;
 $white-background: #fefefe;
 $global-font-color: #717171;
 $nav-font-color: #777;
-//reset
-//header
-header {
-  background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
-    url(/resources/images/gallery/slide-4.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.header__h1 {
-  @extend .main__h2--center;
-  margin: 0;
-}
-//Background
-.section__background--dark {
-  background-color: #222222;
-  padding-top: 5px;
-  padding-bottom: 20px;
-}
-.feature__background--dark {
-  background-color: #222222;
-  margin: 20px;
-  padding-bottom: 5px;
-}
-.section__background--darkest {
-  @extend .section__background--dark;
-  background-color: #1b1b1b;
-  padding-top: none;
-}
 
-//HR
-.main__hr {
-  text-align: center;
-  width: 35px;
-  height: 4px;
-  background-color: #717171;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 45px;
-}
-
-.main__hr--left {
-  @extend .main__hr;
-  margin-left: 30px;
-}
-
-//button
-.main__button--red {
+%buttons {
   background-color: red;
   color: white;
   padding: 15px 30px 15px 30px;
@@ -61,38 +16,7 @@ header {
   margin-bottom: 20px;
   margin-top: 30px;
 }
-.main__button--right {
-  @extend .main__button--red;
-  display: flex;
-  margin: 20px;
-}
-
-.main__button--border {
-  @extend .main__button--red;
-  background-color: transparent;
-  border: 1px solid #717171;
-  display: flex;
-  margin-left: 10px;
-  margin-top: 40px;
-}
-
-.button__border--center {
-  @extend .main__button--border;
-  display: flex;
-  margin: auto;
-}
-
-.button__text--flex {
-  display: flex;
-  align-items: center;
-}
-.fa-instagram {
-  text-align: center;
-  margin-right: 10px;
-}
-
-//Paragraphe
-p {
+%default-p{
   font-family: "Hind", sans-serif;
   font-size: 14px;
   margin-top: 10px;
@@ -100,22 +24,8 @@ p {
   margin-left: 30px;
   margin-right: 30px;
   color: #717171;
-  a {
-    color: #f60b0e;
-  }
 }
-.p--left {
-  @extend p;
-  text-align: left;
-}
-.main__a-tag {
-  color: red;
-  font-family: "Hind", sans-serif;
-  font-size: 10px;
-}
-
-//Titre
-.main__h2--center {
+%default-h2{
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -124,193 +34,256 @@ p {
   margin-bottom: 20px;
 }
 
-.main__h2--left {
-  @extend .main__h2--center;
-  display: flex;
-  margin-left: 30px;
-}
-.main__h3--left {
-  @extend .main__h2--center;
-  font-size: 19px;
-  text-align: left;
-  margin-left: 20px;
-}
-.main__h3--center {
-  @extend .main__h3--left;
-  text-align: center;
-}
-.homepage__h2--black {
-  @extend .main__h2--center;
-  color: black;
-  margin-bottom: 20px;
+//reset
+* {
+  //padding: 0px;
+  //margin: 0px;
+  //border: 0px;
+  //text-align: center;
+  max-width: 412px;
+  //border: 0;
+  //list-style: none;
 }
 
-//Formulaire
-input {
-  background-color: transparent;
-  border-bottom: 1.5px solid #717171;
-  margin: 15px;
-  padding-bottom: 15px;
-  font-size: 14px;
-  width: 350px;
-  text-align: left;
-}
-textarea {
-  @extend input;
-  padding: 5px;
-  padding-bottom: 70px;
-}
-::placeholder {
-  text-align: left;
-  color: #717171;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-}
-
-//Grid Instagram
-.homepage__figure--grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 5px;
-  margin: 30px;
-  margin-top: 50px;
-}
-//img instagram
-.homepage__img--instagram {
-  width: 175px;
-}
-
-//Other article
-.homepage__otherarticle {
-  background-image: linear-gradient(
-      290deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgb(0, 0, 0) 100%
-    ),
-    url(/resources/images/gallery/room-7.jpg);
-  background-size: cover;
-  padding: 20px;
-}
-.otherarticle__li--text {
-  @extend .main__h2--center;
-  font-weight: 700;
-  display: flex;
-  margin-left: 30px;
-  padding: 20px;
-  margin: 0;
-}
-.i-red {
+main {
+  .white-background {
+    background-color: white;
+  }
+  section {
+  background-color: $dark-background;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  
+  }
+  hr {
+    text-align: center;
+    width: 40px;
+    height: 5px;
+    background-color: #717171;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    border-color: none;
+    border-style: none;
+  }
+  article {
+    h3 {
+      margin-left: 30px;;
+    }
+  }
+  p {
+    font-family: "Hind", sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #717171;
+  }
+  .p--left {
+      @extend %default-p;
+      text-align: left;
+    }
+  .main__button--red {
+    @extend %buttons;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    border-color: none;
+    border-style: none;
+  }
+  .main__button--border {
+    @extend %buttons;
+    background-color: transparent;
+    border: 1px solid #717171;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .button__border--center {
+    @extend %buttons;
+    display: flex;
+    margin: auto;
+    border-color: none;
+    border-style: none;
+    .button__text--flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .fa-instagram {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .main__a-tag {
   color: red;
-  margin-right: 10px;
-  font-size: 32px;
-}
-//LatestBlogPosts
-.div__background--first {
-  background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
-    url(/resources/images/gallery/room-9.jpg);
-
-  background-size: cover;
-  width: 352px;
-  height: 250px;
-  margin: 30px;
-}
-
-.div__background--second {
-  @extend .div__background--first;
-  background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
-    url(/resources/images/gallery/room-7.jpg);
-}
-
-.div__background--third {
-  @extend .div__background--first;
-  background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
-    url(/resources/images/gallery/post-img-2.jpg);
-}
-
-.img--avatar {
-  border-radius: 50%;
-  border: 3px solid white;
-  width: 40px;
-  margin: 10px;
-}
-.span--avatar {
+  font-family: "Hind", sans-serif;
   font-size: 10px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-.div--avatar {
   display: flex;
-  align-items: center;
-  position: relative;
-  top: 170px;
-  left: 10px;
-}
-.p--small--left {
-  font-size: 10px;
-  text-align: left;
-  margin: 30px;
-}
-//Testimonials
-.testmonials__span {
-  @extend .span--avatar;
-  color: #717171;
   justify-content: center;
-  margin: 20px;
-}
-.testimonials__div--avatar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.testimonial__img {
-  margin: 0 auto;
-  width: 25%;
-}
-
-//Howitwork
-.fa-lock {
-  color: white;
-  font-size: 40px;
-  margin: 30px;
-}
-.fa-clock {
-  @extend .fa-lock;
-}
-.fa-heart-pulse {
-  @extend .fa-lock;
-}
-
-//FeaturedRooms
-.articleFeature__img {
-  width: 100%;
-}
-.feature__p--lock {
-  margin: 20px;
-  display: flex;
-}
-
-.feature--lock {
-  color: #717171;
-  font-size: 14px;
-  margin: 3px;
-}
-.feature--lock:hover {
-  color: red;
-}
-
-.feature--icon {
-  color: white;
-  font-size: 20px;
-  margin: 0;
-  margin: 3px;
-}
-.feature__p--info {
-  color: #717171;
-  margin: 20px;
-  font-weight: 700;
-}
-.feature__div--info {
-  display: flex;
+  }
+  .main__h2--center {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .main__h2--left {
+    @extend %default-h2;
+    display: flex;
+    margin-left: 30px;
+  }
+  .main__h3--left {
+    @extend %default-h2;
+    font-size: 19px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  .main__h3--center {
+    @extend .main__h3--left;
+    text-align: center;
+  }
+  .homepage__h2--black {
+    @extend .main__h2--center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  input {
+    background-color: transparent;
+    border-bottom: 1.5px solid #717171;
+    margin: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    width: 350px;
+    text-align: left;
+  }
+  textarea {
+    @extend input;
+    padding: 5px;
+    padding-bottom: 70px;
+  }
+  ::placeholder {
+    text-align: left;
+    color: #717171;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+  
+  //Grid Instagram
+  .homepage__figure--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    margin: 30px;
+    margin-top: 50px;
+  }
+  //img instagram
+  .homepage__img--instagram {
+    width: 175px;
+  }
+  
+  //Other article
+  .homepage__otherarticle {
+    background-image: linear-gradient(
+        290deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgb(0, 0, 0) 100%
+      ),
+      url(/resources/images/gallery/room-7.jpg);
+    background-size: cover;
+    padding: 20px;
+  }
+  .otherarticle__li--text {
+    @extend .main__h2--center;
+    font-weight: 700;
+    display: flex;
+    margin-left: 30px;
+    padding: 20px;
+    margin: 0;
+  }
+  .i-red {
+    color: red;
+    margin-right: 10px;
+    font-size: 32px;
+  }
+  //LatestBlogPosts
+  .div__background--first {
+    background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
+      url(/resources/images/gallery/room-9.jpg);
+  
+    background-size: cover;
+    width: 352px;
+    height: 250px;
+    margin: 30px;
+  }
+  
+  .div__background--second {
+    @extend .div__background--first;
+    background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
+      url(/resources/images/gallery/room-7.jpg);
+  }
+  
+  .div__background--third {
+    @extend .div__background--first;
+    background-image: linear-gradient(360deg, #222222 0%, rgba(0, 0, 0, 0) 100%),
+      url(/resources/images/gallery/post-img-2.jpg);
+  }
+  
+  .img--avatar {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 40px;
+    margin: 10px;
+  }
+  .span--avatar {
+    font-size: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  .div--avatar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 170px;
+    left: 10px;
+  }
+  .p--small--left {
+    font-size: 10px;
+    text-align: left;
+    margin: 30px;
+  }
+  //Testimonials
+  .testmonials__span {
+    @extend .span--avatar;
+    color: #717171;
+    justify-content: center;
+    margin: 20px;
+  }
+  .testimonials__div--avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .testimonial__img {
+    margin: 0 auto;
+    width: 25%;
+  }
+  
+  //Howitwork
+  .fa-lock {
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+  }
+  .fa-clock {
+    @extend .fa-lock;
+  }
+  .fa-heart-pulse {
+    @extend .fa-lock;
+  }  
 }

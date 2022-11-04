@@ -74,7 +74,7 @@ table {
   border-spacing: 0;
 }
 
-footer {
+header, footer {
   font-family: "Hind", sans-serif;
 }
 
@@ -125,114 +125,112 @@ h3 {
     font-size: 11px;
   }
 }
+header, footer {
+  font-family: "Hind", sans-serif;
+}
+
 header {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.header_div-navbar {
-  display: flex;
-  background-color: rgba(28, 29, 27, 0.3);
-  justify-content: space-between;
-}
-.header_div-navbar i {
-  color: white;
-}
-
-.header_i-user {
-  display: none;
-}
-
-.header_img {
-  display: inline;
+header img {
   width: 40%;
 }
-
-.header_nav {
-  display: inline;
+header #hamburger {
+  display: none;
 }
-.header_nav li {
-  display: inline;
+header #hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  text-decoration: none;
 }
-
-.header_p {
-  display: inline;
+header #hamnav label {
+  display: inline-block;
+  color: #fefefe;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
 }
-
-.header_h1 {
+header #hamitems {
+  display: none;
+}
+header #hamnav input:checked ~ #hamitems, header #hamnav textarea:checked ~ #hamitems {
+  display: block;
+}
+header .navbar {
+  background-color: #1B1B1B;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+}
+header .navbar p, header .navbar .p--left {
+  display: none;
+}
+header .navbar .fa-calendar {
+  color: #fefefe;
+  border: 2px solid #3D3D3D;
+  border-radius: 90%;
+  padding: 10px;
+}
+header .navbar .fa-magnifying-glass {
+  color: #fefefe;
+  border: 2px none #3D3D3D;
+  border-radius: 90%;
+  padding: 10px;
+}
+header .navbar .navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-end;
+}
+header p, header .p--left, header a, header pre {
+  font-size: 15px;
+}
+header h1 {
+  font-size: 32px;
   padding-top: 75px;
   text-align: center;
   font-weight: bold;
 }
-.header_h1 span {
+header h1 span {
   color: red;
 }
-
-.header_p {
+header h1 p, header h1 .p--left {
   display: block;
   text-align: center;
   margin: 0 auto;
   margin-top: 15px;
   padding-bottom: 60px;
 }
-.header_p span {
+header h1 p span, header h1 .p--left span {
   color: white;
 }
-
-header .fa-calendar {
-  border: 2px solid #3D3D3D;
-  border-radius: 90%;
-  padding: 10px;
-  margin-left: 100px;
+header .directory-buttons {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  font-size: 15px;
+  color: #717171;
+}
+header .directory-buttons a {
+  font-size: 15px;
+  color: #fefefe;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 413px) {
-  .header_p {
-    padding-bottom: 100px;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .header_img {
-    width: 25%;
-  }
-  .header_div-navbar p, .header_div-navbar .p--left {
-    line-height: 60px;
-    vertical-align: center;
-  }
-  .header_div-navbar .first-div {
-    display: flex;
-    flex-direction: row;
-    vertical-align: center;
-  }
-  .header_nav li {
-    font-weight: bold;
-    margin-left: 15px;
-    line-height: 60px;
-    vertical-align: center;
-  }
-  .last_div {
-    display: flex;
-    flex-direction: row;
-  }
-  .header_i-calendar {
-    display: none;
-  }
-  .header_i-user {
-    display: inline;
-  }
-  .header_button {
-    display: block;
-    border-radius: 25px;
-    background-color: #1B1B1B;
-    border: 2px solid #3D3D3D;
-    color: white;
-    font-weight: bold;
-    margin: 10px 0 10px 10px;
-    padding: 15px 35px;
-  }
-}
 footer .footer__general-informations .column4 .column4_title, footer .footer__general-informations .column3 .column3_title, footer .footer__general-informations .column2 .column2_title, footer .footer__general-informations .column1 .column1_title {
   display: flex;
   flex-direction: row;
@@ -555,6 +553,9 @@ p, .p--left {
   margin-left: 30px;
   margin-right: 30px;
   color: #717171;
+}
+p a, .p--left a {
+  color: #f60b0e;
 }
 
 .p--left {
